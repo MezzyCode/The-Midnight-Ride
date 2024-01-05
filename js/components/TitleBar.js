@@ -2,16 +2,23 @@ class TitleBar extends HTMLElement {
   render() {
     const type = this.getAttribute('type');
     const sideButtonIcon = `<i class="fa-solid fa-bars"></i>`
-    this.innerHTML = `<div class="titlecontainer ${type ? type : ''}">
-    <div id="sideButton">
-        ${type !== 'transparent' ? sideButtonIcon : ''}
+    this.innerHTML = `<div class="title-bar ${type ? type : ''}">
+    <div class="brand">
+        <img src="./img/logo.webp" alt="Logo">
+        <a class="tmr-text" href="./index.html">
+            <span>THE</span>
+            <span>MIDNIGHT</span>
+            <span>RIDE</span></a>
     </div>
-    <img src="./img/logo.webp" alt="Logo">
-    <a href="./index.html">The Midnight Ride</a>
-    <div class="guideLinks">
-        <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
-        <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-        <a href="https://dragonbornsfate.moddinglinked.com" target="_blank" rel="nofollow">Skyrim Special Edition</a>
+    <div class="flex-center">
+        <button class="drawer" id="sideButton" type="button" aria-label="Open Navigation Drawer">
+            ${type !== 'transparent' ? sideButtonIcon : ''}
+        </button>
+        <nav class="guide-links">
+            <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Viva New Vegas</a>
+            <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">The Best of Times</a>
+            <a href="https://dragonbornsfate.moddinglinked.com" target="_blank" rel="nofollow">Dragonborns Fate</a>
+        </nav>
     </div>
 </div>`;
   }

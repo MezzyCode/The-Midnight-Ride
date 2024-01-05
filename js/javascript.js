@@ -36,6 +36,17 @@ donoMenusContainer.forEach(element => {
     })
 });
 
+// Reworked Expander
+const expanderElement = document.querySelectorAll('.expander-title')
+expanderElement.forEach((element) => {
+    element.addEventListener('click', () => {
+        const expanderInfo = element.nextElementSibling;
+        const elementStatus = element.lastElementChild;
+        expanderInfo.classList.toggle('hidden');
+        elementStatus.textContent = elementStatus.textContent === 'Show' ? 'Hide' : 'Show';
+    })
+})
+
 function sizeChanged() {
     if (document.documentElement.clientWidth > 760) {
         document.getElementById("sideButton").style.marginLeft = "";

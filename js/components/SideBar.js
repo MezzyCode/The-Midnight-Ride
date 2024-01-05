@@ -24,7 +24,6 @@ class SideBar extends HTMLElement {
       <a href="./basefinish.html">Base Finish</a>
     </li>
   </ul>
-  <hr>
 </div>
 <div class="extended-background">
   <h3 id="extended-separator">TMR Extended</h3>
@@ -47,7 +46,6 @@ class SideBar extends HTMLElement {
   </ul>
 </div>
 <div>
-  <hr>
   <ul>
     <li>
       <a href="./appendix.html">Appendix</a>
@@ -66,7 +64,6 @@ class SideBar extends HTMLElement {
 
 <!-- Guide Links -->
 <div class="guideLinks">
-  <hr>
   <ul>
     <li>
       <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
