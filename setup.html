@@ -2,239 +2,230 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preload" href="./css/style.css" as="style" />
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="img/logo-icon.webp">
-    <link rel="canonical" href="https://themidnightride.moddinglinked.com">
-    <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
-    <script src="./js/javascript.js" type="module"></script>
-    <title>Initial Setup | The Midnight Ride</title>
-    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack">
-    <meta name="description" content="Clean install and initial launch of the vanilla game.">
-    <meta http-equiv='content-language' content='en-us'>
-    <meta name="twitter:card" value="summary_large_image">
-    <meta property="og:site_name" content="ModdingLinked">
-    <meta property="og:title" content="The Midnight Ride">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://themidnightride.moddinglinked.com">
-    <meta property="og:image" content="https://themidnightride.moddinglinked.com/img/card.webp">
-    <meta property="og:description" content="Clean install and initial launch of the vanilla game.">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="icon" href="img/logo-icon.webp">
+	<link rel="canonical" href="https://themidnightride.moddinglinked.com">
+	<script src="./assets/main.js" type="module"></script>
+	<title>Initial Setup | The Midnight Ride</title>
+	<meta name="keywords"
+		content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack">
+	<meta name="description" content="Clean install and initial launch of the vanilla game.">
+	<meta http-equiv='content-language' content='en-us'>
+	<meta name="twitter:card" value="summary_large_image">
+	<meta property="og:site_name" content="ModdingLinked">
+	<meta property="og:title" content="The Midnight Ride">
+	<meta property="og:type" content="article">
+	<meta property="og:url" content="https://themidnightride.moddinglinked.com">
+	<meta property="og:image" content="https://themidnightride.moddinglinked.com/img/card.webp">
+	<meta property="og:description" content="Clean install and initial launch of the vanilla game.">
 </head>
 
 <body>
-    <title-bar></title-bar>
-    <side-bar id="sidenavLeft"></side-bar>
+	<title-bar></title-bar>
+	<aside is="side-bar"></aside>
 
-    <!-- Content -->
-    <div class="content">
-
-        <!-- Introduction -->
-        <div class="section">
-            <h1>Setup</h1>
-            <h3>In this step, we will do a clean installation and configuration of the game, which is required for the guide.</h3>
-            <blockquote>
-                If you run into any issues at any point in the guide, please be sure to check the <a href="./faq.html" target="_blank">FAQ</a>.
-                <br>
-                If your issue is not addressed there, join the <a href="https://discord.gg/S99Ary5eba" target="_blank">Discord</a> for support.
-            </blockquote>
-
-            <!-- Recommended Location -->
-            <p>
-                <a href="#location">
-                    <h2 id="location">Install Location</h2>
-                </a>
-            </p>
-            A clean installation is not only required to get rid of any potential leftover mod files, but also to make sure the game is installed in a safe location. Here is what you need to know when choosing where to install your game:
-            <br>
-            <ul>
-                <li>
-                    <b>Avoid any default Windows folders:</b> This includes but is not limited to <code>C:\Program Files</code>, <code>C:\Program Files x86</code>, your <code>Desktop</code> and your <code>Documents</code> folders.
-                    <br>
-                    This is because users lack write access to Program Files, while Desktop and Documents are often managed by OneDrive. This can cause many issues with the game and any modding tools.
-                    <br>
-                    An example of a safe location is <code>C:\Games</code>
-                </li>
-                <li>
-                    <b>Install on an SSD if possible:</b> Having the game on an SSD will drastically improve loading times and decrease stuttering.
-                </li>
-            </ul>
-
-            <!-- Uninstall -->
-            <p>
-                <a href="#uninstall">
-                    <h2 id="uninstall">Uninstalling the Game</h2>
-                </a>
-            </p>
-            <blockquote>If you never installed the game before, skip this section.</blockquote>
-            As the game is available on Steam and GOG, there are separate instructions for each version. You obviously only need to follow the directions for the version you have.
-
-            <div class="expander colors-steam">
-                <div class="expander-title">
-                    <strong>Steam</strong>
-                    <span>Show</span>
-                </div>
-                <div class="expander-info hidden">
-                    <blockquote>If you already uninstalled the game, make sure to follow step 4 and 5 to ensure there are no leftovers.</blockquote>
-                    <ol>
-                        <li>Open Steam and go to your <strong>Library</strong>.</li>
-                        <li>Find <strong>Fallout 4</strong> in the list.</li>
-                        <li>Right-click on it and select <strong>Manage</strong> -> <strong>Uninstall</strong>.</li>
-                        <li>Navigate to <code>Steam\steamapps\common</code> and, if present, delete the <strong>Fallout 4</strong> folder.</li>
-                        <li>Navigate to <code>Documents\My Games</code> and delete the <strong>Fallout4</strong> folder.</li>
-                    </ol>
-                </div>
-            </div>
-
-            <div class="expander colors-gog">
-                <div class="expander-title">
-                    <strong>GOG</strong>
-                    <span>Show</span>
-                </div>
-                <div class="expander-info hidden">
-                    <ol>
-                        <li>Open GOG and go to your <strong>Library</strong>.</li>
-                        <li>Find <strong>Fallout 4</strong> in the list.</li>
-                        <li>Right-click on it and select <strong>Manage Installation -> Uninstall</strong>.</li>
-                        <ul> <li>If you used an offline installer then run the <strong>unins000.exe</strong> file in the game's <strong>Root</strong> folder.</li> </ul>
-                    </ol>
-                </div>
-            </div>
-            <!-- Install -->
-            <p>
-                <a href="#install">
-                    <h2 id="install">Installing the Game</h2>
-                </a>
-            </p>
-
-            <div class="expander colors-steam">
-                <div class="expander-title">
-                    <strong>Steam</strong>
-                    <span>Show</span>
-                </div>
-                <div class="expander-info hidden">
-                    <blockquote>
-                        It is strongly recommended to install the game outside of any default Windows folders (such as <code>Program Files (x86)</code>), as the the strict Windows file protections of these folders can break certain mods/tools. Instead, we will use a tool called Steam Library Setup Tool to create a new Steam library folder outside of any default Windows folders.
-                        <br>
-                        If you already have Steam installed outside of any default windows folders then go directly to step 7 and install the game to your custom Steam library.
-                    </blockquote>
-                    <ol>
-                        <li>Completely exit out of Steam using Task Manager or System Tray.</li>
-                        <li>Download the <strong>steam_library_setup_tool-3.2.exe</strong> file from <a href="https://github.com/LostDragonist/steam-library-setup-tool/releases">here</a>.</li>
-                        <li>Once downloaded, run the file and add a new entry by clicking <strong>Add Row</strong>.</li>
-                        <li>Type the chosen path under <strong>Path</strong>, e.g. <code>C:\Games\Steam</code></li>
-                        <li>Click <strong>Accept</strong> then <strong>Yes</strong> if prompted to create a new folder.</li>
-                        <li>The tool will ask to exit, select <strong>OK</strong>.
-                            <img src="./img/steam library setup tool.webp" alt="Steam library setup tool">
-                        </li>
-                        <li>Open Steam and go to your <strong>Library</strong>.</li>
-                        <li>Find <strong>Fallout 4</strong> in the list and select <strong>Install</strong>.</li>
-                        <li>Under <strong>Install to:</strong>, select the library folder created with the tool, which is the second <b>C:\</b> entry if you are installing on the main drive.
-                            <img src="./img/steam location picker.webp" alt="Example Steam install locations">
-                            <blockquote>If you still do not see your new library, restart your PC.</blockquote>
-                        </li>
-                        <li>Select <strong>Next</strong> then wait for the install to finish.</li>
-                    </ol>
-                </div>
-            </div>
-
-            <div class="expander colors-gog">
-                <div class="expander-title">
-                    <strong>GOG</strong>
-                    <span>Show</span>
-                </div>
-                <div class="expander-info hidden">
-                    <ol>
-                        <li>Open GOG and go to your <strong>Library</strong>.</li>
-                        <li>Find <strong>Fallout 4</strong> in the list and select <strong>Install</strong>.</li>
-                        <li>Set the <strong>Install to</strong> location to a location of your choice.</li>
-                        <ul>
-                            <li>It is <strong>required</strong> to install the game outside of any default Windows folders (e.g., <code>Program Files x86</code>).</li>
-                        </ul>
-                    </ol>
-                </div>
-            </div>
-            <!-- Post-Installation -->
-            <p>
-                <a href="#postInstall">
-                    <h2 id="postInstall">Post-Installation</h2>
-                </a>
-            </p>
-
-            <!-- Key Terminology -->
-            <p>
-                <a href="#terms">
-                    <h3 id="terms">Key Terminology</h3>
-                </a>
-            </p>
-            Now that the game is installed, there are two folders from it that will be referred to in the guide often:
-            <ul>
-                <li><b>Root</b> folder: Where the game is installed.</li>
-                <ul>
-                    <li><code>Steam\steamapps\common\Fallout 4</code></li>
-                </ul>
-                <li><b>Data</b> folder: Where all of the game's assets are located.</li>
-                <ul>
-                    <li><code>Steam\steamapps\common\Fallout 4\Data</code></li>
-                </ul>
-            </ul>
-
-            <!-- File Extensions -->
-            <p>
-                <a href="#fileExtensions">
-                    <h3 id="fileExtensions">Enabling File Extensions</h3>
-                </a>
-            </p>
-            By default, File Explorer will not show file extensions (such as .exe, .dll, or .esp). These extensions are very important when going through the guide, so it is highly recommended to enable visible file extensions:
-            <ol>
-                <li>Open File Explorer.</li>
-                <li>Select the <strong>View</strong> tab at the top.</li>
-                <li>Enable <strong>File name extensions</strong> in the <strong>Show</strong> section.</li>
-                <img width="60%" src="./img/show file extensions.webp" alt="Show file extensions">
-            </ol>
-
-            <!-- INI Files -->
-            <p>
-                <a href="#generatingInis">
-                    <h3 id="generatingInis">Generating Fresh INI Files</h3>
-                </a>
-            </p>
-            <ol>
-                <li>Run the game from Steam.</li>
-                <li>Click OK to both pop-ups that say <strong>Detecting Video Hardware</strong>.</li>
-                <ul>
-                    <li>If there aren't any pop-ups, navigate to <code>Documents\My Games\Fallout 4</code> and delete all the files ending in <strong>.INI</strong> then retry.</li>
-                </ul>
-                <li>Select <strong>Options</strong> then select the <strong>Ultra</strong> preset option.</li>
-                <li>Set the <strong>Resolution</strong> option to your preference (the launcher usually does not set it to your monitor's max resolution).</li>
-                <li>Click <strong>OK</strong> then <strong>Exit</strong>.</li>
-            </ol>
-
-            <!-- DPI Fix -->
-            <p>
-                <a>
-                    <h3 id="dpiFix">Fixing DPI scaling</h3>
-                </a>
-            </p>
-            <ol>
-                <li>Right-click on Fallout4.exe in the root folder.</li>
-                <li>Open properties and navigate to the <strong>Compatibility</strong> tab.</li>
-                <li>Click on <strong>Change high DPI settings</strong>.</li>
-                <li>Set <strong>High DPI scaling override</strong> to <strong>Application</strong>.</li>
-            </ol>
-        </div>
-
-        <!-- Arrows -->
-        <div>
-            <hr>
-            <a href="./intro.html" id="previous" rel="prev" class="navigationArrow"><img class="left mirror" src="./img/arrow.webp" alt="Back Arrow"><span class="arrowText left">Intro</span></a>
-            <a href="./mo2.html" id="next" rel="next" class="navigationArrow"><img class="right" src="./img/arrow.webp" alt="Forward Arrow"><span class="arrowText right">Mod Organizer 2</span></a>
-        </div>
-    </div>
-
-    <right-side-bar id="sidenavRight"></right-side-bar>
+	<!-- Content -->
+	<main class="content">
+		<article>
+			<section>
+				<h1><a href="#setup">Setup</a></h1>
+				<p>In this step, we will do a clean installation and configuration of the game, which is required for the guide.
+				</p>
+				<blockquote>
+					If you run into any issues at any point in the guide, please be sure to check the <a href="./faq.html"
+						target="_blank">FAQ</a>.
+					<br>
+					If your issue is not addressed there, join the <a href="https://discord.gg/S99Ary5eba"
+						target="_blank">Discord</a> for support.
+				</blockquote>
+			</section>
+			<section>
+				<h2 id="location"><a href="#location">Install Location</a></h2>
+				<p> A clean installation is not only required to get rid of any potential leftover mod files, but also to make
+					sure the game is installed in a safe location. Here is what you need to know when choosing where to install
+					your game: </p>
+				<ul>
+					<li>
+						<p><b>Avoid any default Windows folders:</b> This includes but is not limited to.</p>
+						<ul>
+							<li><code>C:\Program Files</code></li>
+							<li><code>C:\Program Files x86</code></li>
+							<li>
+								<p>Your <code>Desktop</code> and your <code>Documents</code> folders.</p>
+							</li>
+						</ul>
+						<p>This is because users lack write access to Program Files, while Desktop and Documents are often managed
+							by OneDrive. This can cause many issues with the game and any modding tools.<br>
+							An example of a safe location is <code>C:\Games</code>
+						</p>
+					</li>
+					<li>
+						<b>Install on an SSD if possible:</b> Having the game on an SSD will drastically improve loading times and
+						decrease stuttering.
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h2 id="uninstall"><a href="#uninstall">Uninstall</a></h2>
+				<blockquote>If you never installed the game before, skip this section.</blockquote>
+				<p>As the game is available on Steam and GOG, there are separate instructions for each version. You obviously
+					only need to follow the directions for the version you have.</p>
+				<div class="expander-container">
+					<div class="expander colors-steam">
+						<div class="expander-title">
+							<strong>Steam</strong>
+							<span>Show</span>
+						</div>
+						<div class="expander-info hidden">
+							<blockquote>If you already uninstalled the game, make sure to follow step 4 and 5 to ensure there are no
+								leftovers.</blockquote>
+							<ol>
+								<li>Open Steam and go to your <strong>Library</strong>.</li>
+								<li>Find <strong>Fallout 4</strong> in the list.</li>
+								<li>Right-click on it and select <strong>Manage</strong> -> <strong>Uninstall</strong>.</li>
+								<li>Navigate to <code>Steam\steamapps\common</code> and, if present, delete the <strong>Fallout
+										4</strong>
+									folder.</li>
+								<li>Navigate to <code>Documents\My Games</code> and delete the <strong>Fallout4</strong> folder.</li>
+							</ol>
+						</div>
+					</div>
+					<div class="expander colors-gog">
+						<div class="expander-title">
+							<strong>GOG</strong>
+							<span>Show</span>
+						</div>
+						<div class="expander-info hidden">
+							<ol>
+								<li>Open GOG and go to your <strong>Library</strong>.</li>
+								<li>Find <strong>Fallout 4</strong> in the list.</li>
+								<li>Right-click on it and select <strong>Manage Installation -> Uninstall</strong>.</li>
+								<ul>
+									<li>If you used an offline installer then run the <strong>unins000.exe</strong> file in the game's
+										<strong>Root</strong> folder.
+									</li>
+								</ul>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<h2 id="install"><a href="#install">Install</a></h2>
+				<p>It is strongly recommended to install the game outside of any default Windows folders (such as
+					<code>Program Files (x86)</code>), as the the strict Windows file protections of these folders can break
+					certain mods/tools.
+				</p>
+				<div class="expander-container">
+					<div class="expander colors-steam">
+						<div class="expander-title"> <strong>Steam</strong> <span>Show</span> </div>
+						<div class="expander-info hidden">
+							<blockquote> For steam, we will use a tool called Steam Library Setup Tool to create a new Steam
+								library folder outside of any default Windows folders. If you already have Steam installed outside of
+								any
+								default windows folders then go directly to
+								step 7 and
+								install the game to your custom Steam library.
+							</blockquote>
+							<ol>
+								<li>Completely exit out of Steam using Task Manager or System Tray.</li>
+								<li>Download the <strong>steam_library_setup_tool-3.2.exe</strong> file from <a
+										href="https://github.com/LostDragonist/steam-library-setup-tool/releases">here</a>.</li>
+								<li>Once downloaded, run the file and add a new entry by clicking <strong>Add Row</strong>.</li>
+								<li>Type the chosen path under <strong>Path</strong>, e.g. <code>C:\Games\Steam</code></li>
+								<li>Click <strong>Accept</strong> then <strong>Yes</strong> if prompted to create a new folder.</li>
+								<li>The tool will ask to exit, select <strong>OK</strong>.
+									<img src="./img/steam library setup tool.webp" alt="Steam library setup tool">
+								</li>
+								<li>Open Steam and go to your <strong>Library</strong>.</li>
+								<li>Find <strong>Fallout 4</strong> in the list and select <strong>Install</strong>.</li>
+								<li>Under <strong>Install To:</strong>, select the library folder created with the tool, which is the
+									second
+									<b>C:\</b> entry if you are installing on the main drive.
+									<img src="./img/steam location picker.webp" alt="Example Steam install locations">
+									<blockquote>If you still do not see your new library, restart your PC.</blockquote>
+								</li>
+								<li>Select <strong>Next</strong> then wait for the install to finish.</li>
+							</ol>
+						</div>
+					</div>
+					<div class="expander colors-gog">
+						<div class="expander-title">
+							<strong>GOG</strong>
+							<span>Show</span>
+						</div>
+						<div class="expander-info hidden">
+							<ol>
+								<li>Open GOG and go to your <strong>Library</strong>.</li>
+								<li>Find <strong>Fallout 4</strong> in the list and select <strong>Install</strong>.</li>
+								<li>Set the <strong>Install to</strong> location to a location of your choice.</li>
+								<ul>
+									<li>It is <strong>required</strong> to install the game outside of any default Windows folders (e.g.,
+										<code>Program Files x86</code>).
+									</li>
+								</ul>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<h2 id="postInstall"><a href="#postInstall">Post-Installation</a></h2>
+				<h3 id="terms">Key Terminology</h3>
+				<p>Now that the game is installed, there are two folders from it that will be referred to in the guide often:
+				</p>
+				<ul>
+					<li><b>Root</b> folder: This is the main installation directory where the game is installed.<br>
+						<code>Steam\steamapps\common\Fallout 4</code>
+					</li>
+					<li><b>Data</b> folder: This folder houses all of the game's assets, including textures, models, and other
+						resources.<br>
+						<code>Steam\steamapps\common\Fallout 4\Data</code>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h3 id="fileExtensions"><a href="#fileExtension">Enabling File Extensions</a></h3>
+				<p>By default, File Explorer will not show file extensions (such as .exe, .dll, or .esp). These extensions are
+					very
+					important when going through the guide, so it is highly recommended to enable visible file extensions:</p>
+				<ol>
+					<li>Open File Explorer.</li>
+					<li>Select the <strong>View</strong> tab at the top.</li>
+					<li>Enable <strong>File name extensions</strong> in the <strong>Show</strong> section.</li>
+					<img src="./img/show file extensions.webp" alt="Show file extensions">
+				</ol>
+			</section>
+			<section>
+				<h3 id="generatingInis"><a href="#generatingInis">Generating Fresh INI Files</a></h3>
+				<ol>
+					<li>Run the game from Steam.</li>
+					<li>Click OK to both pop-ups that say <strong>Detecting Video Hardware</strong>.</li>
+					<ul>
+						<li>If there aren't any pop-ups, navigate to <code>Documents\My Games\Fallout 4</code> and delete all the
+							files ending in <strong>.INI</strong> then retry.</li>
+					</ul>
+					<li>Select <strong>Options</strong> then select the <strong>Ultra</strong> preset option.</li>
+					<li>Set the <strong>Resolution</strong> option to your preference (the launcher usually does not set it to
+						your
+						monitor's max resolution).</li>
+					<li>Click <strong>OK</strong> then <strong>Exit</strong>.</li>
+				</ol>
+			</section>
+			<section>
+				<h3 id="fixDpi"><a href="#fixDpi">Fixing DPI scaling</a></h3>
+				<ol>
+					<li>Right-click on Fallout4.exe in the root folder.</li>
+					<li>Open properties and navigate to the <strong>Compatibility</strong> tab.</li>
+					<li>Click on <strong>Change high DPI settings</strong>.</li>
+					<li>Set <strong>High DPI scaling override</strong> to <strong>Application</strong>.</li>
+				</ol>
+			</section>
+		</article>
+		<arrow-nav></arrow-nav>
+	</main>
 </body>
 
 </html>

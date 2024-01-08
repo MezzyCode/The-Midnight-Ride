@@ -2,50 +2,36 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preload" href="./css/style.css" as="style" />
-    <link rel="preload" href="./img/background.webp" as="image" />
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="img/logo-icon.webp">
-    <link rel="canonical" href="https://themidnightride.moddinglinked.com">
-    <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
-    <script src="./js/javascript.js" type="module"></script>
-    <title>The Midnight Ride</title>
-    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack">
-    <meta name="description" content="A fully modular, comprehensive and regularly updated Fallout 4 modding guide that allows for any personal preference to be satisfied.">
-    <meta http-equiv='content-language' content='en-us'>
-    <meta name="twitter:card" value="summary_large_image">
-    <meta property="og:site_name" content="ModdingLinked">
-    <meta property="og:title" content="The Midnight Ride">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://themidnightride.moddinglinked.com">
-    <meta property="og:image" content="https://themidnightride.moddinglinked.com/img/card.webp">
-    <meta property="og:description" content="A fully modular, comprehensive and regularly updated Fallout 4 modding guide that allows for any personal preference to be satisfied.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="icon" href="img/logo-icon.webp">
+  <link rel="canonical" href="https://themidnightride.moddinglinked.com">
+  <script src="./assets/main.js" type="module"></script>
+  <title>The Midnight Ride</title>
+  <meta name="keywords"
+    content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack">
+  <meta name="description"
+    content="A fully modular, comprehensive and regularly updated Fallout 4 modding guide that allows for any personal preference to be satisfied.">
+  <meta http-equiv='content-language' content='en-us'>
+  <meta name="twitter:card" value="summary_large_image">
+  <meta property="og:site_name" content="ModdingLinked">
+  <meta property="og:title" content="The Midnight Ride">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://themidnightride.moddinglinked.com">
+  <meta property="og:image" content="https://themidnightride.moddinglinked.com/img/card.webp">
+  <meta property="og:description"
+    content="A fully modular, comprehensive and regularly updated Fallout 4 modding guide that allows for any personal preference to be satisfied.">
 </head>
 
-<body>
-    <style>
-        body {
-            background-image: url('./img/background.webp');
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-            background-position: center;
-        }
-    </style>
-
-    <title-bar type="transparent"></title-bar>
-    <!-- <side-bar id="sidenavLeft"></side-bar> -->
-
-    <!-- Content -->
-    <div id="backdrop" class="welcomeContent">
-        <h1 id="title">Welcome to The Midnight Ride!</h1>
-        <a id="next" class="welcomeButton" href="./intro.html" onmouseover="titleGlow(1)"
-            onmouseleave="titleGlow(0)"><strong>Get Started</strong></a>
-        <!-- <a id="next" class="welcomeButtonWJ" href="./wabbajack.html" onmouseover="titleGlow(1)" onmouseleave="titleGlow(0)"><strong>Automated Install <br> Wabbajack</strong></a> -->
-    </div>
+<body class="index blur">
+  <title-bar type="transparent"></title-bar>
+  <aside is="side-bar" class="hidden"></aside>
+  <main class="index-container">
+    <h1 class="index-title">Welcome to The Midnight Ride!</h1>
+    <a class="index-button" href="./intro.html">Get Started</a>
+    <arrow-nav class="hidden"></arrow-nav>
+  </main>
 </body>
 
 </html>

@@ -2,97 +2,78 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preload" href="./css/style.css" as="style" />
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="img/logo-icon.webp">
-    <link rel="canonical" href="https://themidnightride.moddinglinked.com">
-    <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
-    <script src="./js/javascript.js" type="module"></script>
-    <title>Final Steps | The Midnight Ride</title>
-    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack">
-    <meta name="description" content="Final steps necessary before playing the game.">
-    <meta http-equiv='content-language' content='en-us'>
-    <meta name="twitter:card" value="summary_large_image">
-    <meta property="og:site_name" content="ModdingLinked">
-    <meta property="og:title" content="The Midnight Ride">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://themidnightride.moddinglinked.com">
-    <meta property="og:image" content="https://themidnightride.moddinglinked.com/img/card.webp">
-    <meta property="og:description" content="Final steps necessary before playing the game.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="icon" href="img/logo-icon.webp">
+  <link rel="canonical" href="https://themidnightride.moddinglinked.com">
+  <script src="./assets/main.js" type="module"></script>
+  <title>Final Steps | The Midnight Ride</title>
+  <meta name="keywords"
+    content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack">
+  <meta name="description" content="Final steps necessary before playing the game.">
+  <meta http-equiv='content-language' content='en-us'>
+  <meta name="twitter:card" value="summary_large_image">
+  <meta property="og:site_name" content="ModdingLinked">
+  <meta property="og:title" content="The Midnight Ride">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://themidnightride.moddinglinked.com">
+  <meta property="og:image" content="https://themidnightride.moddinglinked.com/img/card.webp">
+  <meta property="og:description" content="Final steps necessary before playing the game.">
 </head>
 
 <body>
-    <title-bar></title-bar>
-    <side-bar id="sidenavLeft"></side-bar>
+  <title-bar></title-bar>
+  <aside is="side-bar"></aside>
 
-    <!-- Content -->
-    <div class="content">
-        <div class="section">
-            <h1>Base Finish</h1>
+  <!-- Content -->
+  <main class="content">
+    <section>
+      <h1><a href="#basefinish">Base Finish</a></h1>
+    </section>
+    <section>
+      <h2 id="loadOrder"><a href="https://www.nexusmods.com/fallout4/mods/67185">Load Order</a></h2>
+      <p>Pre-configured TMR Load Order. Automatically ensures your load order is correct for the guide.</p>
+      <strong>Installation instructions:</strong>
+      <ol>
+        <li>Download the file.</li>
+        <li>Once it has finished downloading, click the <img class="img-inline" src="./img/mo2 folders.webp"
+            alt="MO2 folders"> button at the top of MO2 and select <strong>Open Profile folder</strong>.</li>
+        <li>Extract the <strong>loadorder.txt</strong> from the downloaded archive to the folder you opened and
+          overwrite when prompted.</li>
+        <li>Once the file is extracted, click <strong>F5</strong> while you are on MO2 without any menu open.</li>
+        <li>Right-click in the <b>right</b> pane of MO2 and select <strong>Enable all</strong>.</li>
+      </ol>
+      <blockquote>
+        If you have not added any mods to the guide, <strong>PuddleReflectionFix.esp</strong> should be the bottom mod
+        in your load order (the <strong>Plugins</strong> tab in the <b>right</b> pane of MO2) after applying the load
+        order and refreshing MO2. If not, you made a mistake during mod installation.
+        You can join our <a href="https://discord.gg/S99Ary5eba" target="_blank">Discord</a> for support.
+      </blockquote>
+      <blockquote>
+        <figure></figure>
+        <p>Run the game using the F4SE option in MO2!</p>
+        <img src="./img/run f4se.webp" alt="Run F4SE through MO2">
+      </blockquote>
+    </section>
+    <section>
+      <h2 id="gogSupport"><a href="#gogSupport">GOG Support</a></h2>
+      <p>If you own the game on GOG, click <strong>Edit...</strong> then add <code>-forcesteamloader</code> to the
+        arguments text box of <strong>F4SE</strong>.</p>
+    </section>
+    <section>
+      <h2 id="tmre"><a href="#tmre">TMR Extended</a></h2>
+      <p> You have now completed the basic section of The Midnight Ride. If you don't want to mod your game further, you
+        can now start playing. Have fun! </p>
+      <p> If you are hungry for more mods, head to the <a href="./tweaks.html">Tweaks</a> page and keep reading. </p>
+      <div class="extended-background">
+        <img src="./img/logoex.webp" alt="Logo" id="logoex">
+      </div>
+    </section>
+    <div class="section">
 
-            <!-- Load Order -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/fallout4/mods/67185" target="_blank">
-                    <h2 id="loadOrder">Load Order</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ol>
-                <li>Download the file.</li>
-                <li>Once it has finished downloading, click the <img style="width:2%" src="./img/mo2 folders.webp" alt="MO2 folders"> button at the top of MO2 and select <strong>Open Profile folder</strong>.</li>
-                <li>Extract the <strong>loadorder.txt</strong> from the downloaded archive to the folder you opened and overwrite when prompted.</li>
-                <li>Once the file is extracted, click <strong>F5</strong> while you are on MO2 without any menu open.</li>
-                <li>Right-click in the <b>right</b> pane of MO2 and select <strong>Enable all</strong>.</li>
-            </ol>
-            <blockquote>
-                If you have not added any mods to the guide, <strong>PuddleReflectionFix.esp</strong> should be the bottom mod in your load order (the <strong>Plugins</strong> tab in the <b>right</b> pane of MO2) after applying the load order and refreshing MO2. If not, you made a mistake during mod installation.
-                <br>
-                You can join our <a href="https://discord.gg/S99Ary5eba" target="_blank">Discord</a> for support.
-            </blockquote>
-            Automatically ensures your load order is correct for the guide.
-            <blockquote>
-                Run the game using the F4SE option in MO2!
-                <br>
-                <img src="./img/run f4se.webp" alt="Run F4SE through MO2">
-            </blockquote>
-
-            <!-- GOG Support -->
-            <p>
-                <a>
-                    <h2 id="gogSupport">GOG Support</h2>
-                </a>
-            </p>
-            If you own the game on GOG, click <strong>Edit...</strong> then add <code>-forcesteamloader</code> to the arguments text box of <strong>F4SE</strong>.
-
-            <!-- TMRE -->
-            <p>
-                <a>
-                    <h2 id="tmre">TMR Extended</h2>
-                </a>
-            </p>
-            <div class="extended-background">
-                <img src="./img/logoex.webp" alt="Logo" id="logoex">
-                <p>
-                    You have now completed the basic section of The Midnight Ride. If you don't want to mod your game further, you can now start playing. Have fun!
-                    <br>
-                    <br>
-                    If you are hungry for more mods, head to the <a href="./tweaks.html">Tweaks</a> page and keep reading.
-                </p>
-            </div>
-        </div>
-
-        <!-- Arrows -->
-        <div>
-            <hr>
-            <a href="./bugfix.html" id="previous" rel="prev" class="navigationArrow"><img class="left mirror" src="./img/arrow.webp" alt="Back Arrow"><span class="arrowText left">Bug Fixes</span></a>
-            <a href="./tweaks.html" id="next" rel="next" class="navigationArrow"><img class="right" src="./img/arrow.webp" alt="Forward Arrow"><span class="arrowText right">Tweaks</span></a>
-        </div>
-    </div>
-
-    <right-side-bar id="sidenavRight"></right-side-bar>
+      <arrow-nav></arrow-nav>
+  </main>
 </body>
 
 </html>

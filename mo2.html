@@ -3,16 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preload" href="./css/style.css" as="style" />
-    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="./assets/css/style.css">
     <link rel="icon" href="img/logo-icon.webp">
     <link rel="canonical" href="https://themidnightride.moddinglinked.com">
-    <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
-    <script src="./js/javascript.js" type="module"></script>
+    <script src="./assets/main.js" type="module"></script>
     <title>Mod Organizer 2 | The Midnight Ride</title>
-    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack">
+    <meta name="keywords"
+        content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack">
     <meta name="description" content="Installing and configuring Mod Organizer 2.">
     <meta http-equiv='content-language' content='en-us'>
     <meta name="twitter:card" value="summary_large_image">
@@ -26,181 +23,193 @@
 
 <body>
     <title-bar></title-bar>
-    <side-bar id="sidenavLeft"></side-bar>
+    <aside is="side-bar"></aside>
 
-    <!-- Content -->
-    <div class="content">
-
-        <!-- Introduction -->
-        <div class="section">
-            <h1>Mod Organizer 2</h1>
-            <h3>In this step, we will install and configure Mod Organizer 2.</h3>
-
-            <!-- Installing MO2 -->
-            <p>
-                <a href="#installation">
-                    <h2 id="installation">Installing Mod Organizer 2</h2>
-                </a>
-            </p>
-            <ol>
-                <li>Download <strong>Mod Organizer 2</strong> from <a href="https://github.com/ModOrganizer2/modorganizer/releases/download/v2.5.1rc2/Mod.Organizer-2.5.1rc2.7z" target="_blank">here</a>.</li>
-                <li>Once the download has finished, extract the archive anywhere <u>outside</u> of the default Windows folders (like <code>Program Files x86</code>) and <u>outside</u> of the game's <strong>Root</strong> folder.
-                    <br>
-                    Example install path: <code>C:\Modding\MO2\The Midnight Ride</code>
-                </li>
-            </ol>
-
-            <!-- MO2 -->
-            <p>
-                <a href="#configuration">
-                    <h2 id="configuration">Configuring Mod Organizer 2</h2>
-                </a>
-            </p>
-
-            <ol>
-                <li>Run <strong>ModOrganizer.exe</strong> inside the Mod Organizer 2 folder you extracted before.</li>
-                <li>You will be prompted with a pop-up called <strong>Creating an instance</strong>, in which you should just select <strong>Next</strong>.</li>
-                <li>Create a <strong>portable instance</strong>.</li>
-                <img src="./img/mo2 portable instance.webp" alt="Portable instance">
-                <li>Select <strong>Fallout 4</strong>.</li>
-                <li>Enable both <strong>profile-specific options</strong>.</li>
-                <li>Keep the <strong>Location</strong> file path as default.</li>
-            </ol>
-            <blockquote>If you have MO2 installed on an SSD or a HDD with little space, you can check the <strong>Show advanced options</strong> box and change the <strong>Downloads</strong> file path to a different drive with more space. This will not effect download/game performance, and the downloads can be deleted after the mods have been installed.</blockquote>
-            <ol start="6">
-                <li>On the last page, select <strong>Finish</strong>.</li>
-                <li>MO2 will launch and prompt you with <strong>Category Setup</strong>, select <strong>Do Nothing</strong>.</li>
-                <li>If you see a pop-up called <strong>Register?</strong>, select <strong>Yes</strong>.</li>
-            </ol>
-
-            <!-- Exceptions -->
-            <p>
-                <a href="#exceptions">
-                    <h3 id="exceptions">Adding Exceptions to Defender</h3>
-                </a>
-            </p>
-            <ol>
-                <li>Open <a href="ms-settings:windowsdefender">Windows Security</a>.</li>
-                <li>Open <strong>Virus & threat protection</strong>.</li>
-                <li>Click <strong>Manage settings</strong> under <b>Virus & threat protection settings</b>.</li>
-                <li>Scroll down and click <strong>Add or remove exclusions</strong> under <b>Exclusions</b>.</li>
-                <li>Add a <b>Folder</b> exclusion and point it to the folder <strong>Mod Organizer 2</strong> is in.</li>
-                <li>Add another exclusion for your <strong>game folder</strong> (the game's root folder, not documents).</li>
-            </ol>
-            <blockquote>If you are using a third-party antivirus, you will need to find the exceptions menu and add those 2 folders mentioned previously.</blockquote>
-
-            <!-- Settings -->
-            <p>
-                <a href="#settings">
-                    <h3 id="settings">Configuring Settings</h3>
-                </a>
-            </p>
-            <ol>
-                <li>Select the <strong>X</strong> in the bottom right of MO2 to close the log window.</li>
-                <li>Select the <img src="./img/mo2 settings.webp" alt="MO2 settings"> button at the top of MO2 to open the settings.</li>
-                <li>In the <strong>Theme</strong> tab, you can select a different style of your choosing from the drop-down menu at the top.</li>
-                <li>In the <strong>Nexus</strong> tab, select <strong>Connect to Nexus</strong>.</li>
-                <img src="./img/mo2 connect.webp" alt="Connect to Nexus">
-                <ul>
-                    <li>This option will not show up if you have already connected your Nexus account on a different MO2 instance.</li>
-                </ul>
-                <li>MO2 will open your browser and prompt you to authorize the connection.</li>
-                <li>Once you authorize it, you can close out of your browser and of the MO2 settings.</li>
-                <li>Allow MO2 to restart.</li>
-            </ol>
-
-            <!-- INI Configuration -->
-            <p>
-                <a href="#iniConfig">
-                    <h2 id="iniConfig">Configuring INI Files</h2>
-                </a>
-            </p>
-
-            <!-- BethINI -->
-            <p>
-                <a href="#bethIni">
-                    <h3 id="bethIni">Running BethINI</h3>
-                </a>
-            </p>
-            In this step, we will download and run BethINI, which will allow choosing optimized presets and specific more specific options all through an easy GUI.</a>
-            <ol>
-                <li>Download <a href="https://www.nexusmods.com/fallout4/mods/67" target="_blank">BethINI</a>,</li>
-                <li>Extract the archive anywhere outside of the default Windows folders, such as <code>C:\Modding Tools</code>,</li>
-                <li>Run <strong>BethINI.exe</strong>,</li>
-                <li>Select a BethINI Optimized preset depending on your hardware (I recommend High for an average system, do <b>NOT</b> use Ultra. Lower-end systems can use Medium or Low), then do the following:</li>
+    <main class="content">
+        <article>
+            <section>
+                <h1><a href="#mo2">MO2 (Mod Organizer 2)</a></h1>
+                <p>In this step, we will install and configure Mod Organizer 2.</p>
+            </section>
+            <section>
+                <h2 id="installation"><a href="#installation">Installing MO2</a></h2>
                 <ol>
-                    <li>Enable Recommended Tweaks,</li>
-                    <li>Enable Windowed Mode and Borderless,</li>
-                    <li>Set Anisotropic Filtering to 16x,</li>
-                    <li>Select the resolution you want to display the game in,</li>
-                    <li>Edit the other settings to your liking, such as the FOV value or if you want to have subtitles,</li>
-                    <li>Save and exit.</li>
+                    <li>Download <strong>Mod Organizer 2</strong> from <a
+                            href="https://github.com/ModOrganizer2/modorganizer/releases/download/v2.5.1rc2/Mod.Organizer-2.5.1rc2.7z"
+                            target="_blank">here</a>.</li>
+                    <li>Once the download has finished, extract the archive anywhere <u>outside</u> of the default
+                        Windows
+                        folders (like <code>Program Files x86</code>) and <u>outside</u> of the game's
+                        <strong>Root</strong>
+                        folder.
+                        <br>
+                        Example install path: <code>C:\Modding\MO2\The Midnight Ride</code>
+                    </li>
                 </ol>
-            </ol>
-
-            <!-- Custom INI -->
-            <p>
-                <a href="#customIni">
-                    <h3 id="customIni">Custom INI</h3>
-                </a>
-            </p>
-            <ol>
-                <li>Download the <a href="https://www.nexusmods.com/fallout4/mods/67185" target="_blank">Custom INI</a>.</li>
-                <li>Head over to your Documents folder in File Explorer, then navigate to this path <code>My Games\Fallout 4</code></li>
-                <li>Download and extract the archive, then paste the Fallout4Custom.ini file next to the other INIs.</li>
-            </ol>
-
-            <!-- Instructions -->
-            <p>
-                <a href="#instructions">
-                    <h2 id="instructions">Mod Installation Instructions</h2>
-                </a>
-            </p>
-            <blockquote>
-                If a mod is tagged <strong class="performance"></strong> it means that the mod may be performance intensive on lower-end systems. It can be skipped without any problems.
-            </blockquote>
-            When the guide says to install a mod, it will be formatted as follows: <strong>Main File - Example 1.5</strong>. This is referring to the mod's category on Nexus and file name.
-            <br>
-            The guide will list a mod's specific file name, category and version if you need to do more than just download the latest main file.
-            <br>
-            <br>
-            <img src="./img/download example.webp" alt="Download example">
-            <br>
-            <br>
-            Standard mod installation procedure:
-            <ol>
-                <li>Unless instructed otherwise by the guide, download a mod's latest main file using the <strong>Mod Manager Download</strong> button.</li>
-                <li>Once the download has finished, open <strong>Downloads</strong> tab in MO2 (right pane, below executable selector).</li>
-                <li>Double-click on the mod to install it.</li>
-                <li>Enable the mod on the left pane.</li>
-            </ol>
-            Sometimes, a mod will not have a <strong>Mod Manager Download</strong>, or will be hosted on a site other than Nexus.
-            <br>
-            If that is the case, do the following:
-            <ol>
-                <li>Click the <strong>Manual Download</strong> button (or whatever the download button is for the respective site).</li>
-                <li>Once the download has finished, click the <img src="./img/mo2 archive.webp" alt="MO2 archive button"> button at the top of MO2.</li>
-                <li>From the new window, navigate to where the file was downloaded to and double-click it.</li>
-                <li>Finish the install as you would with a <strong>Mod Manager Download</strong> mod.</li>
-            </ol>
-            When downloading multiple files from the same page, you will be prompted with a box in Mod Organizer 2 with the options <strong>Merge</strong>, <strong>Replace</strong> and <strong>Rename</strong>.
-            <br>
-            <ul>
-                <li>You should select the <strong>Rename</strong> option and rename the mod to its respective file name, this will make MO2 install them as separate files for easier management.</li>
-                <li>If you are updating from an old version of a mod, you should select <strong>Replace</strong>, this will automatically delete all the files from the old version of the mod and replace them with the ones from the new version.</li>
-                <li><strong>Merge</strong> should only be used when you are sure the mod will not be updated and in situations where a hotfix is uploaded as separate file.</li>
-            </ul>
-        </div>
-
-        <!-- Arrows -->
-        <div>
-            <hr>
-            <a href="./setup.html" id="previous" rel="prev" class="navigationArrow"><img class="left mirror" src="./img/arrow.webp" alt="Back Arrow"><span class="arrowText left">Setup</span></a>
-            <a href="./utilities.html" id="next" rel="next" class="navigationArrow"><img class="right" src="./img/arrow.webp" alt="Forward Arrow"><span class="arrowText right">Utilities</span></a>
-        </div>
-    </div>
-
-    <right-side-bar id="sidenavRight"></right-side-bar>
+            </section>
+            <section>
+                <h2 id="configuration"><a href="#configuration">Configuring Mod Organizer 2</a></h2>
+                <ol>
+                    <li>Run <strong>ModOrganizer.exe</strong> inside the Mod Organizer 2 folder you extracted before.
+                    </li>
+                    <li>You will be prompted with a pop-up called <strong>Creating an instance</strong>, in which you
+                        should
+                        just select <strong>Next</strong>.</li>
+                    <li>Create a <strong>portable instance</strong>.</li>
+                    <img src="./img/mo2 portable instance.webp" alt="Portable instance">
+                    <li>Select <strong>Fallout 4</strong>.</li>
+                    <li>Enable both <strong>profile-specific options</strong>.</li>
+                    <li>Keep the <strong>Location</strong> file path as default.
+                        <blockquote>If you have MO2 installed on an SSD or a HDD with little space, you can check the
+                            <strong>Show
+                                advanced options</strong> box and change the <strong>Downloads</strong> file path to a
+                            different
+                            drive with more space. This will not effect download/game performance, and the downloads can
+                            be deleted
+                            after the mods have been installed.
+                        </blockquote>
+                    </li>
+                    <li>On the last page, select <strong>Finish</strong>.</li>
+                    <li>MO2 will launch and prompt you with <strong>Category Setup</strong>, select <strong>Do
+                            Nothing</strong>.</li>
+                    <li>If you see a pop-up called <strong>Register?</strong>, select <strong>Yes</strong>.</li>
+                </ol>
+            </section>
+            <section>
+                <h3 id="exceptions"><a href="#exceptions">Adding Exceptions to Defender</a></h3>
+                <ol>
+                    <li>Open <a href="ms-settings:windowsdefender">Windows Security</a>.</li>
+                    <li>Open <strong>Virus & threat protection</strong>.</li>
+                    <li>Click <strong>Manage settings</strong> under <b>Virus & threat protection settings</b>.</li>
+                    <li>Scroll down and click <strong>Add or remove exclusions</strong> under <b>Exclusions</b>.</li>
+                    <li>Add a <b>Folder</b> exclusion and point it to the folder <strong>Mod Organizer 2</strong> is in.
+                    </li>
+                    <li>Add another exclusion for your <strong>game folder</strong> (the game's root folder, not
+                        documents).
+                    </li>
+                </ol>
+                <blockquote>If you are using a third-party antivirus, you will need to find the exceptions menu and add
+                    those 2 folders mentioned previously.</blockquote>
+            </section>
+            <section>
+                <h3 id="settings"><a href="#settings">Configuring Settings</a></h3>
+                <ol>
+                    <li>Select the <strong>X</strong> in the bottom right of MO2 to close the log window.</li>
+                    <li>Select the <img class="img-inline" src="./img/mo2 settings.webp" alt="MO2 settings"> button at the top of MO2 to
+                        open
+                        the settings.</li>
+                    <li>In the <strong>Theme</strong> tab, you can select a different style of your choosing from the
+                        drop-down menu at the top.</li>
+                    <li>In the <strong>Nexus</strong> tab, select <strong>Connect to Nexus</strong>.</li>
+                    <img src="./img/mo2 connect.webp" alt="Connect to Nexus">
+                    <ul>
+                        <li>This option will not show up if you have already connected your Nexus account on a different
+                            MO2
+                            instance.</li>
+                    </ul>
+                    <li>MO2 will open your browser and prompt you to authorize the connection.</li>
+                    <li>Once you authorize it, you can close out of your browser and of the MO2 settings.</li>
+                    <li>Allow MO2 to restart.</li>
+                </ol>
+            </section>
+            <section>
+                <h2 id="iniConfig"><a href="#iniConfig">Configuring INI Files</a></h2>
+                <section>
+                    <h3 id="bethIni"><a href="bethIni">BethINI</a></h3>
+                    <p>In this step, we will download and run BethINI, which will allow choosing optimized presets and
+                        specific
+                        more specific options all through an easy GUI.</p>
+                    <ol>
+                        <li>Download <a href="https://www.nexusmods.com/fallout4/mods/67" target="_blank">BethINI</a>,
+                        </li>
+                        <li>Extract the archive anywhere outside of the default Windows folders, such as
+                            <code>C:\Modding Tools</code>,
+                        </li>
+                        <li>Run <strong>BethINI.exe</strong>,</li>
+                        <li>Select a BethINI Optimized preset depending on your hardware (I recommend High for an
+                            average
+                            system, do <b>NOT</b> use Ultra. Lower-end systems can use Medium or Low), then do the
+                            following:
+                        </li>
+                        <ol>
+                            <li>Enable Recommended Tweaks,</li>
+                            <li>Enable Windowed Mode and Borderless,</li>
+                            <li>Set Anisotropic Filtering to 16x,</li>
+                            <li>Select the resolution you want to display the game in,</li>
+                            <li>Edit the other settings to your liking, such as the FOV value or if you want to have
+                                subtitles,
+                            </li>
+                            <li>Save and exit.</li>
+                        </ol>
+                    </ol>
+                </section>
+                <section>
+                    <h3 id="customIni"><a href="customIni">Custom INI</a></h3>
+                    <ol>
+                        <li>Download the <a href="https://www.nexusmods.com/fallout4/mods/67185" target="_blank">Custom
+                                INI</a>.
+                        </li>
+                        <li>Head over to your Documents folder in File Explorer, then navigate to this path
+                            <code>My Games\Fallout 4</code>
+                        </li>
+                        <li>Download and extract the archive, then paste the Fallout4Custom.ini file next to the other
+                            INIs.
+                        </li>
+                    </ol>
+                </section>
+            </section>
+            <section>
+                <h2 id="instructions"><a href="instructions">Mod Installation</a></h2>
+                <!-- <blockquote>
+                    If a mod is tagged <strong class="performance"></strong> it means that the mod may be performance
+                    intensive on lower-end systems. It can be skipped without any problems.
+                </blockquote> -->
+                <p>When the guide says to install a mod, it will be formatted as follows: <strong>Main File - Example
+                        1.5</strong>. This is referring to the mod's category on Nexus and file name.
+                </p>
+                <p>The guide will list a mod's specific file name, category and version if you need to do more than just
+                    download the latest main file.</p>
+                <img src="./img/download example.webp" alt="Download example">
+                <p>Standard mod installation procedure:</p>
+                <ol>
+                    <li>Unless instructed otherwise by the guide, download a mod's latest main file using the
+                        <strong>Mod
+                            Manager Download</strong> button.
+                    </li>
+                    <li>Once the download has finished, open <strong>Downloads</strong> tab in MO2 (right pane, below
+                        executable selector).</li>
+                    <li>Double-click on the mod to install it.</li>
+                    <li>Enable the mod on the left pane.</li>
+                </ol>
+                <p> Sometimes, a mod will not have a <strong>Mod Manager Download</strong>, or will be hosted on a site
+                    other than Nexus. If that is the case, do the following:</p>
+                <ol>
+                    <li>Click the <strong>Manual Download</strong> button (or whatever the download button is for the
+                        respective site).</li>
+                    <li>Once the download has finished, click the following <img class="img-inline" src="./img/mo2 archive.webp"
+                            alt="MO2 archive button"> button at the top of MO2.</li>
+                    <li>From the new window, navigate to where the file was downloaded to and double-click it.</li>
+                    <li>Finish the install as you would with a <strong>Mod Manager Download</strong> mod.</li>
+                </ol>
+                <p>When downloading multiple files from the same page, you will be prompted with a box in Mod Organizer
+                    2 with
+                    the options <strong>Merge</strong>, <strong>Replace</strong> and <strong>Rename</strong>.</p>
+                <ul>
+                    <li>You should select the <strong>Rename</strong> option and rename the mod to its respective file
+                        name,
+                        this will make MO2 install them as separate files for easier management.</li>
+                    <li>If you are updating from an old version of a mod, you should select <strong>Replace</strong>,
+                        this
+                        will automatically delete all the files from the old version of the mod and replace them with
+                        the
+                        ones from the new version.</li>
+                    <li><strong>Merge</strong> should only be used when you are sure the mod will not be updated and in
+                        situations where a hotfix is uploaded as separate file.</li>
+                </ul>
+            </section>
+        </article>
+        <arrow-nav></arrow-nav>
+    </main>
 </body>
 
 </html>
