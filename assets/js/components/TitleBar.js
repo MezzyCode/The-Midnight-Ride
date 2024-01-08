@@ -1,18 +1,14 @@
 class TitleBar extends HTMLElement {
   render() {
     const type = this.getAttribute('type');
-    const sideButtonIcon = `<i class="fa-solid fa-bars"></i>`
     this.innerHTML = `<div class="title-bar ${type ? type : ''}">
     <div class="brand">
         <img src="./img/logo.webp" alt="Logo">
-        <a class="tmr-text" href="./index.html">
-            <span>THE</span>
-            <span>MIDNIGHT</span>
-            <span>RIDE</span></a>
+        <a class="tmr-text" href="./index.html"> The Midnight Ride</a>
     </div>
     <div class="flex-center">
-        <button class="drawer" id="sideButton" type="button" aria-label="Open Navigation Drawer">
-            ${type !== 'transparent' ? sideButtonIcon : ''}
+        <button class="drawer ${type ? type : ''}" id="drawer" type="button" aria-label="Open Navigation Drawer">
+            <span class="icon i-menu"></span>
         </button>
         <nav class="guide-links">
             <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Viva New Vegas</a>
