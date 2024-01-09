@@ -1,12 +1,4 @@
 import './js/Components.js';
-// Index
-if (window.location.href.endsWith('/index.html')) {
-	const indexButton = document.querySelector('.index-button');
-	indexButton.addEventListener('change', () => {
-		console.log('chagg');
-	})
-}
-
 // Reworked Drawer
 const toggleDrawer = () => {
 	const sideBar = document.querySelector('#sideBar');
@@ -37,14 +29,34 @@ activeLink.appendChild(anchorList);
 
 // Reworked Dono Menu. Still WIP
 const donoMenusContainer = document.querySelectorAll('.donoMenu');
+const donoMenuOverlay = document.querySelector('.side-bar-footer-overlay');
+function toggleDonoMenus(element) {
+	element.classList.toggle('hidden');
+	donoMenuOverlay.classList.toggle('hidden');
+
+	const currentTo = setTimeout(() => {
+		element.classList.add('hidden');
+		donoMenuOverlay.classList.add('hidden');
+	}, 10000);
+
+	return currentTo;
+}
+
 donoMenusContainer.forEach(element => {
 	const donoMenuBtn = element.previousElementSibling;
+	let currentTo;
+
 	donoMenuBtn.addEventListener('click', () => {
-		element.classList.toggle('hidden');
-		setTimeout(() => {
-			element.classList.add('hidden');
-		}, 5000);
-	})
+		clearTimeout(currentTo);
+		currentTo = toggleDonoMenus(element);
+	});
+
+	donoMenuOverlay.addEventListener('click', () => {
+		if (!element.classList.contains('hidden')) {
+			clearTimeout(currentTo);
+			currentTo = toggleDonoMenus(element);
+		}
+	});
 });
 
 // Reworked Expander

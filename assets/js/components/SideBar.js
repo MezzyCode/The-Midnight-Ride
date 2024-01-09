@@ -108,11 +108,12 @@ class SideBar extends HTMLElement {
         </div>
       </li>
       <li>
-        <a href="https://github.com/ModdingLinked/The-Midnight-Ride" target="_blank">
+        <a aria-label="TMR Github Links" href="https://github.com/ModdingLinked/The-Midnight-Ride" target="_blank">
           <span class="icon i-github"></span>
         </a>
       </li>
     </ul>
+    <div class="side-bar-footer-overlay hidden"></div>
   </div>
 </div>`;
     this.id = 'sideBar';
