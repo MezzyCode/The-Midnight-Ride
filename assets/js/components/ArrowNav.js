@@ -20,7 +20,7 @@ class ArrowNav extends HTMLElement {
   }
 
   arrowTemplate(href, id, rel, text, icon) {
-    return `<a href="${href ? href : './index.html'}" id="${id}" rel="${rel}">
+    return `<a class="arrow-nav-link" href="${href ? href : './index.html'}" id="${id}" rel="${rel}">
   ${rel === 'prev' ? `<span class="icon ${icon}"></span>` : ''}
   <span>${text}</span>
   ${rel === 'next' ? `<span class="icon ${icon}"></span>` : ''}
