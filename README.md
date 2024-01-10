@@ -10,33 +10,34 @@ The Midnight Ride is a modding guide for Fallout 4 that will guide you through t
 
 ### tmr-component-based branch
 
-**Right Side Bar Navigation:**
+**Navigation:**
 
 - Dynamically generates anchors from content headings (h2, h3, etc.).
   - Modification to include abbreviation options is added on tmr-optimization branch.
-
-**Left Side Bar Navigation:**
-
 - Automatically adds 'active' class to links in the sidebar and extended-background container based on the current page's URL.
-- Improved semantic representation by switching from `<a>` to `<button>` for the dono menu.
+- Improved semantic representation of dono menu by switching the toggle function to use `<button>` instead of `<a>`.
 
 **HTML Pages:**
 
 - Updated `<script>` tag to include type module.
 - Modified related elements like topbar and sidebar into custom elements.
 
-**style.css:**
+**CSS:**
 
 - Removed specific styles to prevent CSS Reflows - Layout.
 - Added styles for right side bar content headings.
 
 ### tmr-optimization branch branch (built on top of tmr-component-based branch)
 
-#### Optimizations
+**Navigation:**
 
-**Head:**
+- Combined Left and Right Nav into one for a unified experience, allowing mobile users to enjoy both navigation features.
+- Remade the arrow navigation feature to automatically retrieve prev and next page names and href.
+
+**HTML Pages:**
 
 - Removed `<meta http-equiv="X-UA-Compatible" content="ie=edge">` for compatibility reasons.
+- Rewrote the HTML with proper structure (specifically, from Setup to Base Finish page, Bug Fixes page too but only from UFO4 to SprintFix).
 
 **Main Javascript:**
 
@@ -44,10 +45,7 @@ The Midnight Ride is a modding guide for Fallout 4 that will guide you through t
   - Replaced with CSS-based alternative.
 - Reworked `document.addEventListener('keydown')` to use a switch statement.
 
-**Notable Changes:**
+**CSS:**
 
-- Rewrote the HTML with proper structure (specifically, from Setup to Base Finish page, Bug Fixes page too but only from UFO4 to SprintFix).
-- Combined Left and Right Nav into one for a unified experience, allowing mobile users to enjoy both navigation features.
-- Remade the arrow navigation feature to automatically retrieve prev and next page names and href.
 - Redesigned CSS from ground-up for responsive design.
 - Switched out the fa-icon with Iconify's icon generator feature, making it accessible even when offline.
