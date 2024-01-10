@@ -263,7 +263,7 @@ title-bar {
 .donoMenu {
   position: fixed;
   top: 50vh;
-  right: 50vw;
+  left: 2rem;
   width: 250px;
   z-index: 3;
   padding: 1rem;
@@ -385,7 +385,7 @@ code {
     align-items: center;
     gap: 1rem;
     font-weight: bold;
-    font-size: clamp(1rem, 3vw, 2rem);
+    font-size: clamp(1.5rem, 3vw, 2rem);
     color: var(--primary-color);
   }
 }

@@ -3,7 +3,7 @@ class TitleBar extends HTMLElement {
     const type = this.getAttribute('type');
     this.innerHTML = `<div class="title-bar ${type ? type : ''}">
     <div class="brand">
-        <img src="./img/logo.webp" alt="Logo">
+        <img src="./img/logo-icon.webp" alt="Logo">
         <a class="tmr-text" href="./index.html"> The Midnight Ride</a>
     </div>
     <div class="flex-center">
