@@ -52,11 +52,11 @@ class SideBar extends HTMLElement {
   <div>
     <ul>
       <li>
-        <a href="./appendix.html">Appendix</a>
+        <a href="./changelog.html">Changelog</a>
       </li>
       <li>
-        <a href="./faq.html">FAQ</a>
-      </li>
+        <a href="./resources.html">Resources</a>
+    </li>
       <li>
         <a href="./avoid-tools.html">Tools to Avoid</a>
       </li>
