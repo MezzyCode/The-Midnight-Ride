@@ -209,6 +209,10 @@ title-bar {
     color: var(--primary-color);
   }
 
+  a:hover:not(.active) {
+    text-shadow: 0px 0px 2px var(--primary-color);
+  }
+
   strong {
     color: inherit;
     justify-content: center;
@@ -302,7 +306,7 @@ title-bar {
     color: var(--primary-color);
   }
 
-  section {
+  article {
     margin: 1rem 0 2rem;
     display: grid;
     gap: 0.5rem;
@@ -378,6 +382,7 @@ code {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 1rem;
   border-top: 2px solid var(--text-color);
 
   .arrow-nav-link {
