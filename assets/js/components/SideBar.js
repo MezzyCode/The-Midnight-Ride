@@ -143,8 +143,8 @@ class SideBar extends HTMLElement {
       this.rendered = true;
     }
 
-    // Adding single dot to make this works, is pretty weird but fuck it 
-    const currentPage = window.location.pathname;
+    const path = window.location.pathname
+    const currentPage = path === '/' ? '/index.html' : path;
     this.setActiveLink(currentPage);
   }
 }

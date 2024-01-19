@@ -32,7 +32,8 @@
 			<h1>Utilities</h1>
 			<section>
 				<h2 id="f4se" short="F4SE">
-					<a class="link" href="https://www.nexusmods.com/fallout4/mods/42147" target="_blank">Fallout 4 Script
+					<a class="link" href="https://www.nexusmods.com/fallout4/mods/42147" target="_blank" rel="noopener">Fallout 4
+						Script
 						Extender (F4SE)
 					</a>
 				</h2>
@@ -44,7 +45,7 @@
 						folder.
 						<blockquote>If you do not know what the <strong>Root</strong> folder is, read the <strong>Key
 								Terminology</strong>
-							section from the <a href="./setup.html#terms" target="_blank">Setup</a> page.</blockquote>
+							section from the <a href="./setup.html#terms" target="_blank" rel="noopener">Setup</a> page.</blockquote>
 					</li>
 					<li>
 						After proper install, your <strong>Root Folder</strong> should look like this:
@@ -56,7 +57,7 @@
 			</section>
 			<section>
 				<h2 id="preloader" short="Preloader"><a class="link" href="https://www.nexusmods.com/fallout4/mods/33946"
-						target="_blank">xSE
+						target="_blank" rel="noopener">xSE
 						PluginPreloader F4</a></h2>
 				<p>Allows preloading F4SE plugins before the game initializes.</p>
 				<strong>Installation instructions: </strong>
@@ -67,7 +68,7 @@
 					</li>
 				</ul>
 			</section>
-			<hr style="width: 100%; border: 1px solid var(--text-color);">
+			<hr>
 			<section>
 				<h2 id="separator" short="-- MO2 Separator --">Creating a Separator in MO2.</h2>
 				<ol>
@@ -77,7 +78,7 @@
 			</section>
 			<section>
 				<h2 id="iniCacher" short="INI File Cacher"><a class="link" href="https://www.nexusmods.com/fallout4/mods/33947"
-						target="_blank">
+						target="_blank" rel="noopener">
 						PrivateProfileRedirector F4 - Faster game start (INI file cacher)
 					</a></h2>
 				<p>Speeds up game start by storing INI files in memory instead of opening, parsing and closing the file each
@@ -96,7 +97,7 @@
 			</section>
 			<section>
 				<h2 id="addresLib" short="Address Library"><a class="link" href="https://www.nexusmods.com/fallout4/mods/47327"
-						target="_blank">Address Library for F4SE Plugins
+						target="_blank" rel="noopener">Address Library for F4SE Plugins
 					</a></h2>
 				<p>Resource required for other F4SE plugins.</p>
 				<strong>Installation instructions:</strong>
@@ -106,7 +107,8 @@
 			</section>
 			<section>
 				<h2 id="ccExtender" short="Commands Extender"><a class="link"
-						href="https://www.nexusmods.com/fallout4/mods/47328" target="_blank">Console Commands Extender</a></h2>
+						href="https://www.nexusmods.com/fallout4/mods/47328" target="_blank" rel="noopener">Console Commands
+						Extender</a></h2>
 				<p>This mod adds new commands and overhauls existing console commands.</p>
 				<strong>Installation instructions:</strong>
 				<ul>
@@ -115,7 +117,8 @@
 			</section>
 			<section>
 				<h2 id="betterConsole" short="Better Console"><a class="link"
-						href="https://www.nexusmods.com/fallout4/mods/26582" target="_blank">Better Console - F4SE</a></h2>
+						href="https://www.nexusmods.com/fallout4/mods/26582" target="_blank" rel="noopener">Better Console -
+						F4SE</a></h2>
 				<p>Makes console menu show extra useful infomation.</p>
 				<strong>Installation instructions:</strong>
 				<ul>
@@ -123,7 +126,8 @@
 				</ul>
 			</section>
 			<section>
-				<h2 id="physicsFix"><a class="link" href="https://www.nexusmods.com/fallout4/mods/44798" target="_blank">
+				<h2 id="physicsFix"><a class="link" href="https://www.nexusmods.com/fallout4/mods/44798" target="_blank"
+						rel="noopener">
 						High FPS Physics Fix</a></h2>
 				<p>All-in-one solution for smooth FPS-unlocked gameplay, mitigates stutter and reduces loading times.</p>
 				<strong>Installation Instructions:</strong>
@@ -131,25 +135,28 @@
 					<li><b>Main Files - High FPS Physics Fix</b></li>
 					<li>Once the mod has been installed, double-click on it in the left pane of MO2</li>
 					<li>In the <strong>INI-Files</strong> tab, select <code>F4SE/Plugins/HighFPSPhysicsFix.ini</code></li>
-					<li>Change the following options:</li>
-					<ul>
-						<li>Set <strong>InGameFPS</strong> to a value you want the game FPS to be locked to (line 58)</li>
-						If you set InGameFPS to a value higher than 60:
+					<li>Change the following options:
 						<ul>
-							<li>Set <strong>DynamicUpdateBudget</strong> to <b>true</b> (line 264)</li>
-							<li>Set <strong>BudgetMaxFPS</strong> to the <b>same value as InGameFPS</b> (line 283)</li>
+							<li>Set <strong>InGameFPS</strong> to a value you want the game FPS to be locked to (line 58)</li>
+							<li>If you set InGameFPS to a value higher than 60:
+								<ul>
+									<li>Set <strong>DynamicUpdateBudget</strong> to <b>true</b> (line 264)</li>
+									<li>Set <strong>BudgetMaxFPS</strong> to the <b>same value as InGameFPS</b> (line 283)</li>
+								</ul>
+							</li>
+							<li>If you are using VRR (G-Sync or FreeSync):
+								<ul>
+									<li>Set <strong>AllowTearing</strong> to <b>true</b> (line 26)</li>
+									<li>Set <strong>FramerateLimitMode</strong> to <b>1</b> (line 92)</li>
+								</ul>
+							</li>
 						</ul>
-						If you are using VRR (G-Sync or FreeSync):
-						<ul>
-							<li>Set <strong>AllowTearing</strong> to <b>true</b> (line 26)</li>
-							<li>Set <strong>FramerateLimitMode</strong> to <b>1</b> (line 92)</li>
-						</ul>
-					</ul>
+					</li>
 				</ul>
 			</section>
 			<section>
 				<h2 id="loadingFix" short="Loading Fix">
-					<a class="link" href="https://www.nexusmods.com/fallout4/mods/73469" target="_blank">
+					<a class="link" href="https://www.nexusmods.com/fallout4/mods/73469" target="_blank" rel="noopener">
 						Long Loading Times Fix
 					</a>
 				</h2>
@@ -161,7 +168,7 @@
 			</section>
 			<section>
 				<h2 id="robco">
-					<a class="link" href="https://www.nexusmods.com/fallout4/mods/69798" target="_blank">
+					<a class="link" href="https://www.nexusmods.com/fallout4/mods/69798" target="_blank" rel="noopener">
 						RobCo Patcher
 					</a>
 				</h2>
@@ -173,7 +180,7 @@
 			</section>
 			<section>
 				<h2 id="papyrusOps" short="MaxPapyrusOps">
-					<a class="link" href="https://www.nexusmods.com/fallout4/mods/73774" target="_blank">
+					<a class="link" href="https://www.nexusmods.com/fallout4/mods/73774" target="_blank" rel="noopener">
 						Baka MaxPapyrusOps
 					</a>
 				</h2>
@@ -185,7 +192,7 @@
 			</section>
 			<section>
 				<h2 id="encounterFramework" short="REF">
-					<a class="link" href="https://www.nexusmods.com/fallout4/mods/60074" target="_blank">
+					<a class="link" href="https://www.nexusmods.com/fallout4/mods/60074" target="_blank" rel="noopener">
 						Random Encounter Framework (REF)
 					</a>
 				</h2>

@@ -1,7 +1,7 @@
 class ArrowNav extends HTMLElement {
   getLinks() {
     const sideBarLinks = document.querySelector('#sideBar').querySelectorAll('a');
-    let linkIndex = -1;
+    let linkIndex;
     sideBarLinks.forEach((link, index) => {
       if (link.classList.contains('active')) {
         linkIndex = index;

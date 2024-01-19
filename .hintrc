@@ -1,0 +1,25 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "compat-api/html": [
+      "default",
+      {
+        "ignore": [
+          "aside[is]"
+        ]
+      }
+    ],
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "scale",
+          "scrollbar-color",
+          "scrollbar-width"
+        ]
+      }
+    ]
+  }
+}

@@ -65,23 +65,28 @@ body {
 
 /* Scrollbar */
 
-.side-bar, html {
+.side-bar,
+html {
   scrollbar-width: thin;
   scrollbar-color: var(--text-surface-2);
-  
+
   ::-webkit-scrollbar {
     width: 12px;
   }
+
   ::-webkit-scrollbar-corner {
     background: var(--surface-3);
   }
+
   ::-webkit-scrollbar-track {
     background: var(--surface-3);
   }
+
   ::-webkit-scrollbar-thumb {
     background-color: var(--text-surface-2);
     border-radius: 20px;
   }
+
   ::-webkit-scrollbar-thumb:hover {
     background-color: rgba(240, 240, 240, 0.63);
     border-radius: 20px;
@@ -97,12 +102,6 @@ body {
 
 .hidden {
   display: none !important;
-}
-
-.img-inline {
-  display: inline-block;
-  max-height: 1.5rem;
-  margin: 0;
 }
 
 /* TMR TitleBar */
@@ -292,6 +291,12 @@ title-bar {
     margin: 1rem 0;
   }
 
+  .img-inline {
+    display: inline-block;
+    max-height: 1.5rem;
+    margin: 0;
+  }
+
   strong {
     color: var(--secondary-color);
   }
@@ -307,6 +312,11 @@ title-bar {
     margin: 1rem 0 2rem;
     display: grid;
     gap: 0.5rem;
+  }
+
+  hr {
+    width: 100%;
+    border: 1px solid var(--text-color);
   }
 }
 
@@ -410,8 +420,8 @@ code {
 }
 
 .index.blur {
-  backdrop-filter: var(--b-filter);
   -webkit-backdrop-filter: var(--b-filter);
+  backdrop-filter: var(--b-filter);
   --b-filter: saturate(50%) blur(3px);
 }
 
