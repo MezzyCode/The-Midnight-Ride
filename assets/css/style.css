@@ -60,6 +60,7 @@ body {
   font-family: arial, helvetica, sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
+  display: grid;
 }
 
 /* Scrollbar */
@@ -449,7 +450,6 @@ code {
 
   /* TMR Desktop Layout */
   body {
-    display: grid;
     grid-template-columns: auto 1fr;
   }
 
