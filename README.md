@@ -27,7 +27,7 @@ The Midnight Ride is a modding guide for Fallout 4 that will guide you through t
 - Removed specific styles to prevent CSS Reflows - Layout.
 - Added styles for right side bar content headings.
 
-### tmr-optimization branch branch (built on top of tmr-component-based branch)
+### tmr-optimization branch (built on top of tmr-component-based branch)
 
 **Navigation:**
 
