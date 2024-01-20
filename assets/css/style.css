@@ -157,14 +157,15 @@ title-bar {
 /* TMR SideBar */
 .side-bar {
   position: fixed;
-  z-index: 2;
   right: -100%;
+  width: 100%;
+  top: var(--title-bar-height);
+  z-index: 2;
   transition: right 0.2s ease;
   height: calc(100vh - 60px);
   overflow: scroll;
   display: grid;
   grid-template-columns: 1fr auto;
-  width: 100%;
   overflow-x: hidden;
 }
 
@@ -480,7 +481,6 @@ code {
   /* TMR SideBar */
   .side-bar {
     position: sticky;
-    top: var(--title-bar-height);
     width: clamp(200px, 20vw, 230px);
   }
 
