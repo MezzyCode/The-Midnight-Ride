@@ -5,81 +5,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preload" href="./css/style.css" as="style" />
-    <link rel="preload" href="./img/background.webp" as="image" />
+    <link rel="preload" href="./css/style.css" as="style">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="img/Coco/Logo.webp">
     <link rel="canonical" href="https://themidnightride.moddinglinked.com">
-    <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
     <script src="javascript.js"></script>
     <title>The Midnight Ride</title>
-    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack">
-    <meta name="description" content="A fully modular, comprehensive and regularly updated Fallout 4 modding guide that allows for any personal preference to be satisfied.">
-    <meta http-equiv='content-language' content='en-us'>
+    <meta name="keywords"
+        content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack">
+    <meta name="description"
+        content="A fully modular, comprehensive and regularly updated Fallout 4 modding guide that allows for any personal preference to be satisfied.">
+    <meta http-equiv="content-language" content="en-us">
     <meta name="twitter:card" value="summary_large_image">
     <meta property="og:site_name" content="ModdingLinked">
     <meta property="og:title" content="The Midnight Ride">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://themidnightride.moddinglinked.com">
     <meta property="og:image" content="https://themidnightride.moddinglinked.com/img/Others/Card.webp">
-    <meta property="og:description" content="A fully modular, comprehensive and regularly updated Fallout 4 modding guide that allows for any personal preference to be satisfied.">
+    <meta property="og:description"
+        content="A fully modular, comprehensive and regularly updated Fallout 4 modding guide that allows for any personal preference to be satisfied.">
 </head>
 
 <body>
-    <style>
-        body {
-            background-image: url('./img/Others/Background.webp');
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-            background-position: center;
-        }
-    </style>
-
     <!-- Titlebar -->
-    <div class="titlecontainer transparent">
-        <div id="sideButton" onclick="toggleNav()">
-            <i class="fa-solid fa-bars"></i>
+    <header class="title-bar transparent">
+        <label class="ls-toggle">
+            <input type="checkbox" name="lsToggle" id="lsToggle" aria-label="Expand Navigation Side Bar">
+            <span class="icon-park-outline--hamburger-button"></span>
+        </label>
+        <div class="title-logo">
+            <img src="./img/Coco/Logo.webp" alt="Logo">
+            <a href="./index.html">The Midnight Ride</a>
         </div>
-        <img src="./img/Coco/Logo.webp" alt="Logo">
-        <a href="./index.html">The Midnight Ride</a>
-        <div class="guideLinks">
-            <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
-            <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-        </div>
-    </div>
+        <nav class="nav-links" aria-label="Other ModdingLinked Guides">
+            <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="noopener">Fallout New Vegas</a>
+            <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="noopener">Tale of Two Wastelands</a>
+        </nav>
+    </header>
 
-    <!-- Left Sidebar -->
-    <div id="sidenavLeft" class="transparent">
-        <div class="guideLinks">
+    <aside id="lsBar" class="ls-bar" expand="false" style="display: none">
+        <nav aria-label="Site Navigation">
             <ul>
-                <li>
-                    <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
-                </li>
-                <li>
-                    <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-                </li>
+                <li class="li-item"><a href="./index.html">Home</a></li>
+                <li class="li-item"><a href="./intro.html">Intro</a></li>
+                <li class="li-item"><a href="./setup.html">Setup</a></li>
+                <li class="li-item"><a href="./mo2.html">MO2</a></li>
+                <li class="li-item"><a href="./utilities.html">Utilities</a></li>
+                <li class="li-item"><a href="./bugfix.html">Bug Fixes</a></li>
+                <li class="li-item"><a href="./basefinish.html">Base Finish</a></li>
             </ul>
-        </div>
-    </div>
+            <hr>
+            <ul class="tmre-list">
+                <li class="li-item"><strong>TMR Extended</strong></li>
+                <li class="li-item"><a href="./tweaks.html">Tweaks</a></li>
+                <li class="li-item"><a href="./hud.html">User Interface</a></li>
+                <li class="li-item"><a href="./gameplay.html">Gameplay</a></li>
+                <li class="li-item"><a href="./content.html">Content</a></li>
+                <li class="li-item"><a href="./visuals.html">Visuals</a></li>
+                <li class="li-item"><a href="./finish.html">Extended Finish</a></li>
+            </ul>
+            <hr>
+            <ul>
+                <li class="li-item"><a href="./changelog.html">Changelog</a></li>
+                <li class="li-item"><a href="./resources.html">Resources</a></li>
+                <li class="li-item"><a href="./faq.html">FAQ</a></li>
+                <li class="li-item"><a href="./lod.html">LOD</a></li>
+                <li class="li-item"><a href="./wabbajack.html">Wabbajack</a></li>
+                <li class="li-item"><a href="./avoid-tools.html">Avoid Tools</a></li>
+                <li class="li-item"><a href="./avoid-mods.html">Avoid Mods</a></li>
+            </ul>
+            <hr>
+            <ul>
+                <li class="li-item-custom discord"><a href="https://discord.gg/S99Ary5eba" target="_blank"
+                        rel="noopener"><span class="icon--discord"></span> Discord</a></li>
+                <li class="li-item-custom paypal"><a href="https://paypal.me/Ungeziefi" target="_blank"
+                        rel="noopener"><span class="icon--paypal"></span>Donate</a></li>
+                <li class="li-item-custom github"><a href="https://github.com/ModdingLinked/The-Midnight-Ride"
+                        target="_blank" rel="noopener"><span class="icon--github"></span>Github</a></li>
+            </ul>
+        </nav>
+    </aside>
 
     <!-- Content -->
-    <div id="backdrop" class="welcomeContent">
-        <div class="titleContainer">
-            <img src="img/Coco/Full.webp" alt="Background Image" class="backgroundImage">
-            <h1 id="title">Welcome to <br>The Midnight Ride!</h1>
+    <main class="index-page">
+        <img src="img/Coco/Full.webp" alt="Background Image" class="backgroundImage">
+        <div>
+            <h1>Welcome to The Midnight Ride</h1>
+            <a href="./intro.html" rel="next" class="btn-primary">Get Started</a>
         </div>
-        <div class="buttonContainer">
-            <div class="buttonWrapper">
-                <a id="next" class="welcomeButton" href="./intro.html" onmouseover="titleGlow(1)" onmouseleave="titleGlow(0)"><strong>Get Started</strong></a>
-                <span class="buttonText">&#8203;</span>
-            </div>
-            <!--             <div class="buttonWrapper">
-                <a class="welcomeButtonWJ" href="./wabbajack.html" onmouseover="titleGlow(1)" onmouseleave="titleGlow(0)"><strong>Wabbajack</strong></a>
-                <span class="buttonText">Automated modlist installation</span>
-            </div> -->
-        </div>
-    </div>
+    </main>
 </body>
 
 </html>
