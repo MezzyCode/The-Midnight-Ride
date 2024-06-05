@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preload" href="./css/style.css" as="style" />
+    <link rel="preload" href="./css/style.css" as="style">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="img/logoex-icon.webp">
     <link rel="canonical" href="https://themidnightride.moddinglinked.com">
-    <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
     <script src="javascript.js"></script>
     <title>Final Steps | The Midnight Ride</title>
-    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack">
+    <meta name="keywords"
+        content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack">
     <meta name="description" content="Final steps necessary before playing the game.">
-    <meta http-equiv='content-language' content='en-us'>
+    <meta http-equiv="content-language" content="en-us">
     <meta name="twitter:card" value="summary_large_image">
     <meta property="og:site_name" content="ModdingLinked">
     <meta property="og:title" content="The Midnight Ride">
@@ -27,130 +27,64 @@
 <body>
 
     <!-- Titlebar -->
-    <div class="titlecontainer">
-        <div id="sideButton" onclick="toggleNav()">
-            <i class="fa-solid fa-bars"></i>
+    <header class="title-bar">
+        <label class="ls-toggle">
+            <input type="checkbox" name="lsToggle" id="lsToggle" aria-label="Expand Navigation Side Bar">
+            <span class="icon-park-outline--hamburger-button"></span>
+        </label>
+        <div class="title-logo">
+            <img src="./img/Coco/LogoEx.webp" alt="Logo">
+            <a href="./index.html">The Midnight Ride - Extended</a>
         </div>
-        <img src="./img/Coco/LogoEx.webp" alt="Logo">
-        <a href="./index.html">The Midnight Ride - Extended</a>
-        <div class="guideLinks">
-            <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
-            <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-        </div>
-    </div>
+        <nav class="nav-links" aria-label="Other ModdingLinked Guides">
+            <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="noopener">Fallout New Vegas</a>
+            <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="noopener">Tale of Two Wastelands</a>
+        </nav>
+    </header>
 
     <!-- Left Sidebar -->
-    <div id="sidenavLeft">
-        <div>
+    <aside id="lsBar" class="ls-bar" expand="false">
+        <nav aria-label="Site Navigation">
             <ul>
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./intro.html">Introduction</a>
-                </li>
-                <li>
-                    <a href="./setup.html">Setup</a>
-                </li>
-                <li>
-                    <a href="./mo2.html">MO2</a>
-                </li>
-                <li>
-                    <a href="./utilities.html">Utilities</a>
-                </li>
-                <li>
-                    <a href="./bugfix.html">Bug Fixes</a>
-                </li>
-                <li>
-                    <a href="./basefinish.html">Base Finish</a>
-                </li>
+                <li class="li-item"><a href="./index.html">Home</a></li>
+                <li class="li-item"><a href="./intro.html">Intro</a></li>
+                <li class="li-item"><a href="./setup.html">Setup</a></li>
+                <li class="li-item"><a href="./mo2.html">MO2</a></li>
+                <li class="li-item"><a href="./utilities.html">Utilities</a></li>
+                <li class="li-item"><a href="./bugfix.html">Bug Fixes</a></li>
+                <li class="li-item"><a href="./basefinish.html">Base Finish</a></li>
             </ul>
             <hr>
-        </div>
-        <div class="extended-background active">
-            <ul>
-                <h3 id="extended-separator">TMR Extended</h3>
-                <li>
-                    <a href="./tweaks.html">Tweaks</a>
-                </li>
-                <li>
-                    <a href="./hud.html">User Interface</a>
-                </li>
-                <li>
-                    <a href="./gameplay.html">Gameplay</a>
-                </li>
-                <li>
-                    <a href="./content.html">Content</a>
-                </li>
-                <li>
-                    <a href="./visuals.html">Visuals</a>
-                </li>
-                <li>
-                    <a href="./finish.html" class="active">Extended Finish</a>
-                </li>
+            <ul class="tmre-list">
+                <li class="li-item"><strong>TMR Extended</strong></li>
+                <li class="li-item"><a href="./tweaks.html">Tweaks</a></li>
+                <li class="li-item"><a href="./hud.html">User Interface</a></li>
+                <li class="li-item"><a href="./gameplay.html">Gameplay</a></li>
+                <li class="li-item"><a href="./content.html">Content</a></li>
+                <li class="li-item"><a href="./visuals.html">Visuals</a></li>
+                <li class="li-item"><a href="./finish.html">Extended Finish</a></li>
             </ul>
-        </div>
-        <div>
             <hr>
             <ul>
-                <li>
-                    <a href="./changelog.html">Changelog</a>
-                </li>
-                <li>
-                    <a href="./resources.html">Resources</a>
-                </li>
-                <li>
-                    <a href="./faq.html">FAQ</a>
-                </li>
-                <li>
-                    <a href="./avoid-tools.html">Tools to Avoid</a>
-                </li>
-                <li>
-                    <a href="./avoid-mods.html">Mods to Avoid</a>
-                </li>
-                <!-- <li>
-                    <a href="./wabbajack.html">Wabbajack</a>
-                </li> -->
+                <li class="li-item"><a href="./changelog.html">Changelog</a></li>
+                <li class="li-item"><a href="./resources.html">Resources</a></li>
+                <li class="li-item"><a href="./faq.html">FAQ</a></li>
+                <li class="li-item"><a href="./lod.html">LOD</a></li>
+                <li class="li-item"><a href="./wabbajack.html">Wabbajack</a></li>
+                <li class="li-item"><a href="./avoid-tools.html">Avoid Tools</a></li>
+                <li class="li-item"><a href="./avoid-mods.html">Avoid Mods</a></li>
             </ul>
-        </div>
-
-        <!-- Guide Links -->
-        <div class="guideLinks">
             <hr>
             <ul>
-                <li>
-                    <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
-                </li>
-                <li>
-                    <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-                </li>
+                <li class="li-item-custom discord"><a href="https://discord.gg/S99Ary5eba" target="_blank"
+                        rel="noopener"><span class="icon--discord"></span> Discord</a></li>
+                <li class="li-item-custom paypal"><a href="https://paypal.me/Ungeziefi" target="_blank"
+                        rel="noopener"><span class="icon--paypal"></span>Donate</a></li>
+                <li class="li-item-custom github"><a href="https://github.com/ModdingLinked/The-Midnight-Ride"
+                        target="_blank" rel="noopener"><span class="icon--github"></span>Github</a></li>
             </ul>
-        </div>
-
-        <!-- Footer -->
-        <div id="footer">
-            <ul>
-                <li class="discord">
-                    <a href="https://discord.gg/S99Ary5eba" target="_blank">
-                        <i class="fab fa-discord"></i>
-                        Discord
-                    </a>
-                </li>
-                <li class="paypal">
-                    <a href="https://paypal.me/Ungeziefi" target="_blank">
-                        <i class="fa fa-paypal"></i>
-                        Donate
-                    </a>
-                </li>
-                <li class="github">
-                    <a href="https://github.com/ModdingLinked/The-Midnight-Ride" target="_blank">
-                        <i class="fab fa-github"></i>
-                        GitHub
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
+        </nav>
+    </aside>
 
     <!-- Content -->
     <div class="content">
@@ -169,13 +103,19 @@
             <h2 class="install">Installation instructions:</h2>
             <ol>
                 <li>Download the file.</li>
-                <li>Once it has finished downloading, click the <img style="width:2%" src="./img/MO2/Folders.webp" alt="MO2 folders"> button at the top of MO2 and select <strong>Open Profile folder</strong>.</li>
-                <li>Extract the <strong>loadorder.txt</strong> from the downloaded archive to the folder you opened and overwrite when prompted.</li>
-                <li>Once the file is extracted, click <strong>F5</strong> while you are on MO2 without any menu open.</li>
+                <li>Once it has finished downloading, click the <img style="width:2%" src="./img/MO2/Folders.webp"
+                        alt="MO2 folders"> button at the top of MO2 and select <strong>Open Profile folder</strong>.
+                </li>
+                <li>Extract the <strong>loadorder.txt</strong> from the downloaded archive to the folder you opened and
+                    overwrite when prompted.</li>
+                <li>Once the file is extracted, click <strong>F5</strong> while you are on MO2 without any menu open.
+                </li>
                 <li>Right-click in the <b>right</b> pane of MO2 and select <strong>Enable all</strong>.</li>
             </ol>
             <blockquote>
-                If you have not added any mods to the guide, <strong>PuddleReflectionFix.esp</strong> should be the bottom mod in your load order (the <strong>Plugins</strong> tab in the <b>right</b> pane of MO2) after applying the load order and refreshing MO2. If not, you made a mistake during mod installation.
+                If you have not added any mods to the guide, <strong>PuddleReflectionFix.esp</strong> should be the
+                bottom mod in your load order (the <strong>Plugins</strong> tab in the <b>right</b> pane of MO2) after
+                applying the load order and refreshing MO2. If not, you made a mistake during mod installation.
                 <br>
                 <br>
                 You can join our <a href="https://discord.gg/S99Ary5eba" target="_blank">Discord</a> for support.
@@ -184,7 +124,8 @@
 
             <h2 class="gameLaunch">Launching the game</h2>
             <p>
-                To run the game, use <strong>F4SE</strong> entry in Mod Organizer 2. You can use the <b>Shortcut</b> to create Desktop and Start Menu shortcuts, this will allow you to launch the game without opening MO2.
+                To run the game, use <strong>F4SE</strong> entry in Mod Organizer 2. You can use the <b>Shortcut</b> to
+                create Desktop and Start Menu shortcuts, this will allow you to launch the game without opening MO2.
                 <br>
                 <br>
                 <img src="./img/Others/Start F4SE.webp" alt="Run F4SE through MO2">
@@ -196,7 +137,8 @@
                     <h2 id="mcm">MCM Configuration</h2>
                 </a>
             </p>
-            Once you are in the game, you need to head to the <b>Mod Configuration</b> menu, then the <strong>MCM Settings Manager</strong> menu and click <strong>Apply</strong>.
+            Once you are in the game, you need to head to the <b>Mod Configuration</b> menu, then the <strong>MCM
+                Settings Manager</strong> menu and click <strong>Apply</strong>.
             <br>
 
             <!-- Finishing Notes -->
@@ -205,36 +147,22 @@
                     <h2 id="notes">Finishing Notes</h2>
                 </a>
             </p>
-            You have now completed the full The Midnight Ride guide and you can enjoy the game. You may want to add your own mods on top of the guide, but that is only recommended if you are an experienced modder since you need to know how to use <a href="https://moddinglinked.com/xedit.html" target="_blank">FO4Edit</a> and <a href="https://moddinglinked.com/themethod.html" target="_blank">The Method</a> and have good general knowledge of many game systems.
+            You have now completed the full The Midnight Ride guide and you can enjoy the game. You may want to add your
+            own mods on top of the guide, but that is only recommended if you are an experienced modder since you need
+            to know how to use <a href="https://moddinglinked.com/xedit.html" target="_blank">FO4Edit</a> and <a
+                href="https://moddinglinked.com/themethod.html" target="_blank">The Method</a> and have good general
+            knowledge of many game systems.
             <br>
             <br>
             And remember, we may not provide support for setups that have added mods, especially if you went overboard.
         </div>
 
         <!-- Arrows -->
-        <div>
-            <hr>
-            <a href="./visuals.html" id="previous" rel="prev" class="navigationArrow"><img class="left mirror" src="./img/Others/Arrow.webp" alt="Back Arrow"><span class="arrowText left">Visuals</span></a>
-        </div>
+        <arrow-nav></arrow-nav>
     </div>
 
     <!-- Right Sidebar -->
-    <div id="sidenavRight">
-        <ul>
-            <li>
-                <a href="#loadOrder">Load Order</a>
-            </li>
-            <li>
-                <a href="#gameLaunch">Launching the Game</a>
-            </li>
-            <li>
-                <a href="#mcm">MCM Configuration</a>
-            </li>
-            <li>
-                <a href="#notes">Finishing Notes</a>
-            </li>
-        </ul>
-    </div>
+    <right-side-nav class="rs-bar"></right-side-nav>
 </body>
 
 </html>

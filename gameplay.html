@@ -5,152 +5,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preload" href="./css/style.css" as="style" />
+    <link rel="preload" href="./css/style.css" as="style">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="img/logoex-icon.webp">
     <link rel="canonical" href="https://themidnightride.moddinglinked.com">
-    <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
     <script src="javascript.js"></script>
     <title>Gameplay | The Midnight Ride</title>
-    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack">
-    <meta name="description" content="Simple gameplay changes/additions that make the game feel more balanced and modern.">
-    <meta http-equiv='content-language' content='en-us'>
+    <meta name="keywords"
+        content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack">
+    <meta name="description"
+        content="Simple gameplay changes/additions that make the game feel more balanced and modern.">
+    <meta http-equiv="content-language" content="en-us">
     <meta name="twitter:card" value="summary_large_image">
     <meta property="og:site_name" content="ModdingLinked">
     <meta property="og:title" content="The Midnight Ride">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://themidnightride.moddinglinked.com">
     <meta property="og:image" content="https://themidnightride.moddinglinked.com/img/Others/Card.webp">
-    <meta property="og:description" content="Simple gameplay changes/additions that make the game feel more balanced and modern.">
+    <meta property="og:description"
+        content="Simple gameplay changes/additions that make the game feel more balanced and modern.">
 </head>
 
 <body>
 
     <!-- Titlebar -->
-    <div class="titlecontainer">
-        <div id="sideButton" onclick="toggleNav()">
-            <i class="fa-solid fa-bars"></i>
+    <header class="title-bar">
+        <label class="ls-toggle">
+            <input type="checkbox" name="lsToggle" id="lsToggle" aria-label="Expand Navigation Side Bar">
+            <span class="icon-park-outline--hamburger-button"></span>
+        </label>
+        <div class="title-logo">
+            <img src="./img/Coco/LogoEx.webp" alt="Logo">
+            <a href="./index.html">The Midnight Ride - Extended</a>
         </div>
-        <img src="./img/Coco/LogoEx.webp" alt="Logo">
-        <a href="./index.html">The Midnight Ride - Extended</a>
-        <div class="guideLinks">
-            <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
-            <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-        </div>
-    </div>
+        <nav class="nav-links" aria-label="Other ModdingLinked Guides">
+            <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="noopener">Fallout New Vegas</a>
+            <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="noopener">Tale of Two Wastelands</a>
+        </nav>
+    </header>
 
     <!-- Left Sidebar -->
-    <div id="sidenavLeft">
-        <div>
+    <aside id="lsBar" class="ls-bar" expand="false">
+        <nav aria-label="Site Navigation">
             <ul>
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./intro.html">Introduction</a>
-                </li>
-                <li>
-                    <a href="./setup.html">Setup</a>
-                </li>
-                <li>
-                    <a href="./mo2.html">MO2</a>
-                </li>
-                <li>
-                    <a href="./utilities.html">Utilities</a>
-                </li>
-                <li>
-                    <a href="./bugfix.html">Bug Fixes</a>
-                </li>
-                <li>
-                    <a href="./basefinish.html">Base Finish</a>
-                </li>
+                <li class="li-item"><a href="./index.html">Home</a></li>
+                <li class="li-item"><a href="./intro.html">Intro</a></li>
+                <li class="li-item"><a href="./setup.html">Setup</a></li>
+                <li class="li-item"><a href="./mo2.html">MO2</a></li>
+                <li class="li-item"><a href="./utilities.html">Utilities</a></li>
+                <li class="li-item"><a href="./bugfix.html">Bug Fixes</a></li>
+                <li class="li-item"><a href="./basefinish.html">Base Finish</a></li>
             </ul>
             <hr>
-        </div>
-        <div class="extended-background active">
-            <ul>
-                <h3 id="extended-separator">TMR Extended</h3>
-                <li>
-                    <a href="./tweaks.html">Tweaks</a>
-                </li>
-                <li>
-                    <a href="./hud.html">User Interface</a>
-                </li>
-                <li>
-                    <a href="./gameplay.html" class="active">Gameplay</a>
-                </li>
-                <li>
-                    <a href="./content.html">Content</a>
-                </li>
-                <li>
-                    <a href="./visuals.html">Visuals</a>
-                </li>
-                <li>
-                    <a href="./finish.html">Extended Finish</a>
-                </li>
+            <ul class="tmre-list">
+                <li class="li-item"><strong>TMR Extended</strong></li>
+                <li class="li-item"><a href="./tweaks.html">Tweaks</a></li>
+                <li class="li-item"><a href="./hud.html">User Interface</a></li>
+                <li class="li-item"><a href="./gameplay.html">Gameplay</a></li>
+                <li class="li-item"><a href="./content.html">Content</a></li>
+                <li class="li-item"><a href="./visuals.html">Visuals</a></li>
+                <li class="li-item"><a href="./finish.html">Extended Finish</a></li>
             </ul>
-        </div>
-        <div>
             <hr>
             <ul>
-                <li>
-                    <a href="./changelog.html">Changelog</a>
-                </li>
-                <li>
-                    <a href="./resources.html">Resources</a>
-                </li>
-                <li>
-                    <a href="./faq.html">FAQ</a>
-                </li>
-                <li>
-                    <a href="./avoid-tools.html">Tools to Avoid</a>
-                </li>
-                <li>
-                    <a href="./avoid-mods.html">Mods to Avoid</a>
-                </li>
-                <!-- <li>
-                    <a href="./wabbajack.html">Wabbajack</a>
-                </li> -->
+                <li class="li-item"><a href="./changelog.html">Changelog</a></li>
+                <li class="li-item"><a href="./resources.html">Resources</a></li>
+                <li class="li-item"><a href="./faq.html">FAQ</a></li>
+                <li class="li-item"><a href="./lod.html">LOD</a></li>
+                <li class="li-item"><a href="./wabbajack.html">Wabbajack</a></li>
+                <li class="li-item"><a href="./avoid-tools.html">Avoid Tools</a></li>
+                <li class="li-item"><a href="./avoid-mods.html">Avoid Mods</a></li>
             </ul>
-        </div>
-
-        <!-- Guide Links -->
-        <div class="guideLinks">
             <hr>
             <ul>
-                <li>
-                    <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout New Vegas</a>
-                </li>
-                <li>
-                    <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-                </li>
+                <li class="li-item-custom discord"><a href="https://discord.gg/S99Ary5eba" target="_blank"
+                        rel="noopener"><span class="icon--discord"></span> Discord</a></li>
+                <li class="li-item-custom paypal"><a href="https://paypal.me/Ungeziefi" target="_blank"
+                        rel="noopener"><span class="icon--paypal"></span>Donate</a></li>
+                <li class="li-item-custom github"><a href="https://github.com/ModdingLinked/The-Midnight-Ride"
+                        target="_blank" rel="noopener"><span class="icon--github"></span>Github</a></li>
             </ul>
-        </div>
-
-        <!-- Footer -->
-        <div id="footer">
-            <ul>
-                <li class="discord">
-                    <a href="https://discord.gg/S99Ary5eba" target="_blank">
-                        <i class="fab fa-discord"></i>
-                        Discord
-                    </a>
-                </li>
-                <li class="paypal">
-                    <a href="https://paypal.me/Ungeziefi" target="_blank">
-                        <i class="fa fa-paypal"></i>
-                        Donate
-                    </a>
-                </li>
-                <li class="github">
-                    <a href="https://github.com/ModdingLinked/The-Midnight-Ride" target="_blank">
-                        <i class="fab fa-github"></i>
-                        GitHub
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
+        </nav>
+    </aside>
 
     <!-- Content -->
     <div class="content">
@@ -164,7 +100,8 @@
 
             <h2>Creating a Separator in MO2.</h2>
             <ol>
-                <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
+                <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.
+                </li>
                 <li>Name the separator <strong>Gameplay</strong>.</li>
             </ol>
 
@@ -178,7 +115,8 @@
             <ul>
                 <li><b>Main Files - Complex Vendors</b></li>
             </ul>
-            Makes most vendors only buy items related to what they sell (for example doctors will only buy medical supplies).
+            Makes most vendors only buy items related to what they sell (for example doctors will only buy medical
+            supplies).
 
             <!-- Blocking Overhaul -->
             <p>
@@ -202,7 +140,9 @@
             <ul>
                 <li><b>Main Files - Chemfluence AI Combat Dynamics</b></li>
             </ul>
-            Enhances AI behavior by integrating two key factors: chem usage and weapon choice. NPCs will not only respond to chem consumption with distinct combat strategies, but also adapt their tactics based on the weapons they wield.
+            Enhances AI behavior by integrating two key factors: chem usage and weapon choice. NPCs will not only
+            respond to chem consumption with distinct combat strategies, but also adapt their tactics based on the
+            weapons they wield.
 
             <!-- SPARS -->
             <p>
@@ -225,9 +165,11 @@
             <h2 class="install">Installation instructions:</h2>
             <ul>
                 <li><b>Main Files - DLC Timing</b></li>
-                <li><a href="https://www.nexusmods.com/fallout4/mods/63391" target="_blank">DLC Timing - UFO4P Patch</a></li>
+                <li><a href="https://www.nexusmods.com/fallout4/mods/63391" target="_blank">DLC Timing - UFO4P Patch</a>
+                </li>
             </ul>
-            Allows you to change the starting conditions for Automatron, Far Harbor, Nuka World and Vault-Tec Workshop independently to suit your playthrough.
+            Allows you to change the starting conditions for Automatron, Far Harbor, Nuka World and Vault-Tec Workshop
+            independently to suit your playthrough.
 
             <!-- Local Radiants -->
             <p>
@@ -251,7 +193,8 @@
             <ul>
                 <li><b>Main Files - Encounter Zone Recalculation</b></li>
             </ul>
-            Allows previously-visited encounter zones to update the levels of the enemies in them as the player levels up.
+            Allows previously-visited encounter zones to update the levels of the enemies in them as the player levels
+            up.
 
             <!-- Who's The General -->
             <p>
@@ -269,8 +212,10 @@
                 <li>Most Minutemen quests have been moved to Preston's "How are you doing?" dialogue option.</li>
                 <li>Preston Garvey no longer gives you a new quest as part of turning in an old quest.</li>
                 <li>As General of the Minutemen, you no longer report back to Preston at the end of most quests.</li>
-                <li>Radio Freedom now broadcasts even when the player isn't tuned in, fixing radios tuned to the station.</li>
-                <li>The player will only acquire quests from Radio Freedom while tuned in on their Pip-Boy, or listening at The Castle.</li>
+                <li>Radio Freedom now broadcasts even when the player isn't tuned in, fixing radios tuned to the
+                    station.</li>
+                <li>The player will only acquire quests from Radio Freedom while tuned in on their Pip-Boy, or listening
+                    at The Castle.</li>
             </ul>
 
             <!-- Molotov Nerf -->
@@ -295,7 +240,8 @@
             <ul>
                 <li><b>Main Files - Legendaries They Can Use</b></li>
             </ul>
-            Scans the NPCs inventory and picks a random item they already have to slap a legendary on. The item will then be used in their attempt to kill you.
+            Scans the NPCs inventory and picks a random item they already have to slap a legendary on. The item will
+            then be used in their attempt to kill you.
 
             <!-- No Sneaking in PA -->
             <p>
@@ -311,51 +257,11 @@
         </div>
 
         <!-- Arrows -->
-        <div>
-            <hr>
-            <a href="./hud.html" id="previous" rel="prev" class="navigationArrow"><img class="left mirror" src="./img/Others/Arrow.webp" alt="Back Arrow"><span class="arrowText left">User Interface</span></a>
-            <a href="./content.html" id="next" rel="next" class="navigationArrow"><img class="right" src="./img/Others/Arrow.webp" alt="Forward Arrow"><span class="arrowText right">Content</span></a>
-        </div>
+        <arrow-nav></arrow-nav>
     </div>
 
     <!-- Right Sidebar -->
-    <div id="sidenavRight">
-        <ul>
-            <li>
-                <a href="#vendors">Complex Vendors</a>
-            </li>
-            <li>
-                <a href="#blockingOverhaul">Blocking Overhaul</a>
-            </li>
-            <li>
-                <a href="#chemfluence">Chemfluence</a>
-            </li>
-            <li>
-                <a href="#spars">SPARS</a>
-            </li>
-            <li>
-                <a href="#dlcTiming">DLC Timing</a>
-            </li>
-            <li>
-                <a href="#localRadiants">Local Radiants</a>
-            </li>
-            <li>
-                <a href="#zoneRecalc">Zone Recalculation</a>
-            </li>
-            <li>
-                <a href="#whosTheGeneral">Who's The General</a>
-            </li>
-            <li>
-                <a href="#molotovNerf">Molotov Nerf</a>
-            </li>
-            <li>
-                <a href="#legendariesTheyUse">Legendaries They Use</a>
-            </li>
-            <li>
-                <a href="#paSneaking">No Sneaking in PA</a>
-            </li>
-        </ul>
-    </div>
+    <right-side-nav class="rs-bar"></right-side-nav>
 </body>
 
 </html>
