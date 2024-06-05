@@ -1,0 +1,20 @@
+{
+  "name": "the-midnight-ride",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watchcss": "sass css/style.scss css/style.css -w",
+    "buildcss": "postcss css/style.css --use autoprefixer cssnano -r -m"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "cssnano": "^7.0.1",
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0",
+    "sass": "^1.77.3"
+  }
+}
