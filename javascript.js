@@ -30,7 +30,12 @@ function setActiveLink() {
 }
 
 function pageIsTmre() {
-	if (tmrePage.includes(currentPathname)) {
+	const pathnameSlug = (url) => {
+		const parts = url.split('/');
+		const lastPart = parts[parts.length - 1];
+		return lastPart
+	}
+	if (tmrePage.includes(pathnameSlug(currentPathname))) {
 		document.documentElement.setAttribute('tmre', true)
 	}
 }
